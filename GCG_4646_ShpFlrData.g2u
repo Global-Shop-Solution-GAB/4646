@@ -1,0 +1,1213 @@
+Program.Sub.ScreenSU.Start
+Gui.fAddRollDet..Create
+Gui.fAddRollDet..Size(20115,9660)
+Gui.fAddRollDet..MinX(0)
+Gui.fAddRollDet..MinY(0)
+Gui.fAddRollDet..Position(0,0)
+Gui.fAddRollDet..BackColor(-2147483633)
+Gui.fAddRollDet..MousePointer(0)
+Gui.fAddRollDet..Caption("Job Process Details")
+Gui.fAddRollDet..Event(UnLoad,Unload_All)
+Gui.fAddRollDet..MaxButton(False)
+Gui.fAddRollDet..Sizeable(False)
+Gui.fAddRollDet.GsGcRollDet.Create(GsGridControl)
+Gui.fAddRollDet.GsGcRollDet.Size(19905,6165)
+Gui.fAddRollDet.GsGcRollDet.Position(-30,2190)
+Gui.fAddRollDet.GsGcRollDet.Event(RowCellClick,GsGcRollDet_RowCellClick)
+Gui.fAddRollDet.GsGcRollDet.TabStop(True)
+Gui.fAddRollDet.GsGcRollDet.TabIndex(22)
+Gui.fAddRollDet.lbl1.Create(Label,"Roll Number",True,1725,255,0,285,360,True,0,"Arial",8,-2147483633,0)
+Gui.fAddRollDet.lbl1.FontStyle(True,False,False,False,False)
+Gui.fAddRollDet.txtRollNo.Create(TextBox,"",True,1230,300,0,2055,270,True,0,"Arial",8,-2147483626,1)
+Gui.fAddRollDet.txtRollNo.FontStyle(True,False,False,False,False)
+Gui.fAddRollDet.txtRollNo.NumericOnly(2)
+Gui.fAddRollDet.txtRollNo.Locked(True)
+Gui.fAddRollDet.txtRollNo.TabStop(True)
+Gui.fAddRollDet.txtRollNo.TabIndex(12)
+Gui.fAddRollDet.lbl2.Create(Label,"Roll Weight",True,1725,255,0,285,840,True,0,"Arial",8,-2147483633,0)
+Gui.fAddRollDet.txtRollWt.Create(TextBox,"",True,1800,300,0,2055,750,True,0,"Arial",8,-2147483643,1)
+Gui.fAddRollDet.txtRollWt.NumericOnly(1)
+Gui.fAddRollDet.txtRollWt.Event(Change,txt_Change)
+Gui.fAddRollDet.txtRollWt.Event(LostFocus,LostFocus1)
+Gui.fAddRollDet.txtRollWt.TabStop(True)
+Gui.fAddRollDet.txtRollWt.TabIndex(1)
+Gui.fAddRollDet.lbl3.Create(Label,"Measured Layflat (in)",True,1725,255,0,285,1320,True,0,"Arial",8,-2147483633,0)
+Gui.fAddRollDet.txtMsdLayFlat.Create(TextBox,"",True,1800,300,0,2055,1230,True,0,"Arial",8,-2147483643,1)
+Gui.fAddRollDet.txtMsdLayFlat.NumericOnly(1)
+Gui.fAddRollDet.txtMsdLayFlat.Event(Change,txt_Change)
+Gui.fAddRollDet.txtMsdLayFlat.Event(LostFocus,LostFocus1)
+Gui.fAddRollDet.txtMsdLayFlat.TabStop(True)
+Gui.fAddRollDet.txtMsdLayFlat.TabIndex(2)
+Gui.fAddRollDet.lbl4.Create(Label,"10 Ft Sample Gram wt",True,1740,255,0,4170,360,True,0,"Arial",8,-2147483633,0)
+Gui.fAddRollDet.txtSmpGmWt.Create(TextBox,"",True,1800,300,0,5985,270,True,0,"Arial",8,-2147483643,1)
+Gui.fAddRollDet.txtSmpGmWt.NumericOnly(1)
+Gui.fAddRollDet.txtSmpGmWt.Event(Change,txt_Change)
+Gui.fAddRollDet.txtSmpGmWt.Event(LostFocus,LostFocus1)
+Gui.fAddRollDet.txtSmpGmWt.TabStop(True)
+Gui.fAddRollDet.txtSmpGmWt.TabIndex(3)
+Gui.fAddRollDet.lbl5.Create(Label,"Nip Speed",True,1725,255,0,4170,840,True,0,"Arial",8,-2147483633,0)
+Gui.fAddRollDet.txtNipSpd.Create(TextBox,"",True,1800,300,0,5985,750,True,0,"Arial",8,-2147483643,1)
+Gui.fAddRollDet.txtNipSpd.NumericOnly(2)
+Gui.fAddRollDet.txtNipSpd.Event(Change,txt_Change)
+Gui.fAddRollDet.txtNipSpd.Event(LostFocus,LostFocus1)
+Gui.fAddRollDet.txtNipSpd.TabStop(True)
+Gui.fAddRollDet.txtNipSpd.TabIndex(4)
+Gui.fAddRollDet.txtScrap.Create(TextBox,"",True,1800,300,0,14025,270,True,0,"Arial",8,-2147483643,1)
+Gui.fAddRollDet.txtScrap.NumericOnly(1)
+Gui.fAddRollDet.txtScrap.Event(LostFocus,LostFocus1)
+Gui.fAddRollDet.txtScrap.TabStop(True)
+Gui.fAddRollDet.txtScrap.TabIndex(6)
+Gui.fAddRollDet.lbl6.Create(Label,"Scrap Note",True,1725,255,0,12165,840,True,0,"Arial",8,-2147483633,0)
+Gui.fAddRollDet.lbl.Create(Label,"Scrap (lbs)",True,1725,255,0,12165,360,True,0,"Arial",8,-2147483633,0)
+Gui.fAddRollDet.lbl8.Create(Label,"Lbs of additives placed in feeder",True,1725,465,0,12180,1725,True,0,"Arial",8,-2147483633,0)
+Gui.fAddRollDet.txtLbsAdd.Create(TextBox,"",True,1800,300,0,14025,1755,True,0,"Arial",8,-2147483643,1)
+Gui.fAddRollDet.txtLbsAdd.NumericOnly(1)
+Gui.fAddRollDet.txtLbsAdd.Event(LostFocus,LostFocus1)
+Gui.fAddRollDet.txtLbsAdd.TabStop(True)
+Gui.fAddRollDet.txtLbsAdd.TabIndex(8)
+Gui.fAddRollDet.lbl9.Create(Label,"Additive Type",True,1725,255,0,16200,360,True,0,"Arial",8,-2147483633,0)
+Gui.fAddRollDet.lbl10.Create(Label,"Blender Setting by %",True,1725,255,0,12165,1320,True,0,"Arial",8,-2147483633,0)
+Gui.fAddRollDet.txtBlndPct.Create(TextBox,"",True,1800,300,0,14025,1230,True,0,"Arial",8,-2147483643,1)
+Gui.fAddRollDet.txtBlndPct.NumericOnly(1)
+Gui.fAddRollDet.txtBlndPct.Event(LostFocus,LostFocus1)
+Gui.fAddRollDet.txtBlndPct.TabStop(True)
+Gui.fAddRollDet.txtBlndPct.TabIndex(7)
+Gui.fAddRollDet.ddlScpNt.Create(DropDownList)
+Gui.fAddRollDet.ddlScpNt.Size(1800,330)
+Gui.fAddRollDet.ddlScpNt.Position(14025,735)
+Gui.fAddRollDet.lbl7.Create(Label,"Gauge by Weight (mil)",True,1725,255,0,8145,840,True,0,"Arial",8,-2147483633,0)
+Gui.fAddRollDet.lbl7.FontStyle(True,False,False,False,False)
+Gui.fAddRollDet.txtGgeWt.Create(TextBox,"",True,1800,300,0,9990,750,True,0,"Arial",8,-2147483626,1)
+Gui.fAddRollDet.txtGgeWt.Locked(True)
+Gui.fAddRollDet.txtGgeWt.TabStop(True)
+Gui.fAddRollDet.txtGgeWt.TabIndex(14)
+Gui.fAddRollDet.lbl11.Create(Label,"Roll Weight (Without Core)",True,1725,480,0,8145,240,True,0,"Arial",8,-2147483633,0)
+Gui.fAddRollDet.lbl11.FontStyle(True,False,False,False,False)
+Gui.fAddRollDet.txtRollWtWC.Create(TextBox,"",True,1800,300,0,9990,270,True,0,"Arial",8,-2147483626,1)
+Gui.fAddRollDet.txtRollWtWC.Locked(True)
+Gui.fAddRollDet.txtRollWtWC.TabStop(True)
+Gui.fAddRollDet.txtRollWtWC.TabIndex(13)
+Gui.fAddRollDet.lbl13.Create(Label,"Pounds Per Hour",True,1725,255,0,8145,1320,True,0,"Arial",8,-2147483633,0)
+Gui.fAddRollDet.lbl13.FontStyle(True,False,False,False,False)
+Gui.fAddRollDet.txtLbsPerHr.Create(TextBox,"",True,1800,300,0,9990,1230,True,0,"Arial",8,-2147483626,1)
+Gui.fAddRollDet.txtLbsPerHr.Locked(True)
+Gui.fAddRollDet.txtLbsPerHr.TabStop(True)
+Gui.fAddRollDet.txtLbsPerHr.TabIndex(15)
+Gui.fAddRollDet.lbl14.Create(Label,"Total Lbs Finished",True,990,495,0,90,8520,True,0,"Arial",8,-2147483633,0)
+Gui.fAddRollDet.lbl14.FontStyle(True,False,False,False,False)
+Gui.fAddRollDet.txtTotLbs.Create(TextBox,"",True,1800,300,0,1155,8550,True,0,"Arial",8,-2147483626,1)
+Gui.fAddRollDet.txtTotLbs.Locked(True)
+Gui.fAddRollDet.txtTotLbs.TabStop(True)
+Gui.fAddRollDet.txtTotLbs.TabIndex(16)
+Gui.fAddRollDet.lbl15.Create(Label,"Total Footage Finished",True,1200,480,0,3195,8520,True,0,"Arial",8,-2147483633,0)
+Gui.fAddRollDet.lbl15.FontStyle(True,False,False,False,False)
+Gui.fAddRollDet.txtTotFoot.Create(TextBox,"",True,1800,300,0,4605,8550,True,0,"Arial",8,-2147483626,1)
+Gui.fAddRollDet.txtTotFoot.Locked(True)
+Gui.fAddRollDet.txtTotFoot.TabStop(True)
+Gui.fAddRollDet.txtTotFoot.TabIndex(17)
+Gui.fAddRollDet.lbl20.Create(Label,"Total Scrap",True,1140,270,0,6615,8625,True,0,"Arial",8,-2147483633,0)
+Gui.fAddRollDet.lbl20.FontStyle(True,False,False,False,False)
+Gui.fAddRollDet.txtTotScrap.Create(TextBox,"",True,1800,300,0,7785,8550,True,0,"Arial",8,-2147483626,1)
+Gui.fAddRollDet.txtTotScrap.Locked(True)
+Gui.fAddRollDet.txtTotScrap.TabStop(True)
+Gui.fAddRollDet.txtTotScrap.TabIndex(18)
+Gui.fAddRollDet.cmdSaveRollDt.Create(Button)
+Gui.fAddRollDet.cmdSaveRollDt.Size(5580,375)
+Gui.fAddRollDet.cmdSaveRollDt.Position(300,1680)
+Gui.fAddRollDet.cmdSaveRollDt.Caption("Save Roll")
+Gui.fAddRollDet.cmdSaveRollDt.Event(Click,cmdSaveRollDt_Click)
+Gui.fAddRollDet.cmdSaveRollDt.TabStop(True)
+Gui.fAddRollDet.cmdSaveRollDt.TabIndex(10)
+Gui.fAddRollDet.cmdClrFlds.Create(Button)
+Gui.fAddRollDet.cmdClrFlds.Size(5805,375)
+Gui.fAddRollDet.cmdClrFlds.Position(5970,1680)
+Gui.fAddRollDet.cmdClrFlds.Caption("Clear Fields")
+Gui.fAddRollDet.cmdClrFlds.Event(Click,cmdClrFlds_Click)
+Gui.fAddRollDet.cmdClrFlds.TabStop(True)
+Gui.fAddRollDet.cmdClrFlds.TabIndex(11)
+Gui.fAddRollDet.txtFtCntOut.Create(TextBox,"",True,1800,300,0,5985,1230,True,0,"Arial",8,-2147483643,1)
+Gui.fAddRollDet.txtFtCntOut.NumericOnly(1)
+Gui.fAddRollDet.txtFtCntOut.TabStop(True)
+Gui.fAddRollDet.txtFtCntOut.TabIndex(5)
+Gui.fAddRollDet.lbl16.Create(Label,"Foot Counter Output",True,1725,255,0,4170,1320,True,0,"Arial",8,-2147483633,0)
+Gui.fAddRollDet.txtAvgFoot.Create(TextBox,"",True,1800,300,0,14355,8550,True,0,"Arial",8,-2147483626,1)
+Gui.fAddRollDet.txtAvgFoot.Locked(True)
+Gui.fAddRollDet.txtAvgFoot.TabStop(True)
+Gui.fAddRollDet.txtAvgFoot.TabIndex(20)
+Gui.fAddRollDet.lbl21.Create(Label,"Avg. footage per Roll",True,1260,450,0,13050,8535,True,0,"Arial",8,-2147483633,0)
+Gui.fAddRollDet.lbl21.FontStyle(True,False,False,False,False)
+Gui.fAddRollDet.lbl22.Create(Label,"Avg. Gague by Weight",True,1125,450,0,9855,8535,True,0,"Arial",8,-2147483633,0)
+Gui.fAddRollDet.lbl22.FontStyle(True,False,False,False,False)
+Gui.fAddRollDet.txtAvgGge.Create(TextBox,"",True,1800,300,0,11010,8550,True,0,"Arial",8,-2147483626,1)
+Gui.fAddRollDet.txtAvgGge.Locked(True)
+Gui.fAddRollDet.txtAvgGge.TabStop(True)
+Gui.fAddRollDet.txtAvgGge.TabIndex(19)
+Gui.fAddRollDet.txtAvgMsd.Create(TextBox,"",True,1800,300,0,18075,8550,True,0,"Arial",8,-2147483626,1)
+Gui.fAddRollDet.txtAvgMsd.Locked(True)
+Gui.fAddRollDet.txtAvgMsd.TabStop(True)
+Gui.fAddRollDet.txtAvgMsd.TabIndex(21)
+Gui.fAddRollDet.lbl23.Create(Label,"Avg. Msd Layflat",True,1470,270,0,16425,8625,True,0,"Arial",8,-2147483633,0)
+Gui.fAddRollDet.lbl23.FontStyle(True,False,False,False,False)
+Gui.fAddRollDet.txtaddType.Create(TextBoxR)
+Gui.fAddRollDet.txtaddType.Size(3615,1410)
+Gui.fAddRollDet.txtaddType.Position(16245,615)
+Gui.fAddRollDet.txtaddType.MaxLength(100)
+Gui.fAddRollDet.txtaddType.TabStop(True)
+Gui.fAddRollDet.txtaddType.TabIndex(9)
+Gui.fAddBagsDet..Create
+Gui.fAddBagsDet..Caption("Job Process Details")
+Gui.fAddBagsDet..Size(8640,4650)
+Gui.fAddBagsDet..MinX(0)
+Gui.fAddBagsDet..MinY(0)
+Gui.fAddBagsDet..Position(0,0)
+Gui.fAddBagsDet..BackColor(-2147483633)
+Gui.fAddBagsDet..MousePointer(0)
+Gui.fAddBagsDet..Sizeable(False)
+Gui.fAddBagsDet..Event(UnLoad,fAddBagsDet_UnLoad)
+Gui.fAddBagsDet..MaxButton(False)
+Gui.fAddBagsDet.cmdSaveBagDet.Create(Button)
+Gui.fAddBagsDet.cmdSaveBagDet.Size(3840,690)
+Gui.fAddBagsDet.cmdSaveBagDet.Position(225,3375)
+Gui.fAddBagsDet.cmdSaveBagDet.Caption("Save Details")
+Gui.fAddBagsDet.cmdSaveBagDet.Event(Click,cmdSaveBagDet_Click)
+Gui.fAddBagsDet.cmdSaveBagDet.TabStop(True)
+Gui.fAddBagsDet.cmdSaveBagDet.TabIndex(9)
+Gui.fAddBagsDet.txtNoDowScr.Create(TextBox,"",True,1455,300,0,2610,180,True,0,"Arial",8,-2147483643,1)
+Gui.fAddBagsDet.txtNoDowScr.NumericOnly(2)
+Gui.fAddBagsDet.txtNoDowScr.Event(LostFocus,LostFocus2)
+Gui.fAddBagsDet.txtNoDowScr.TabStop(True)
+Gui.fAddBagsDet.txtNoDowScr.TabIndex(1)
+Gui.fAddBagsDet.lbl.Create(Label,"No. of Dowels scrapped",True,1935,255,0,195,270,True,0,"Arial",8,-2147483633,0)
+Gui.fAddBagsDet.lbl2.Create(Label,"No. of Trays scrapped",True,1935,255,0,195,660,True,0,"Arial",8,-2147483633,0)
+Gui.fAddBagsDet.txtNoTrayScr.Create(TextBox,"",True,1455,300,0,2610,570,True,0,"Arial",8,-2147483643,1)
+Gui.fAddBagsDet.txtNoTrayScr.NumericOnly(2)
+Gui.fAddBagsDet.txtNoTrayScr.Event(LostFocus,LostFocus2)
+Gui.fAddBagsDet.txtNoTrayScr.TabStop(True)
+Gui.fAddBagsDet.txtNoTrayScr.TabIndex(2)
+Gui.fAddBagsDet.txtNoTubeScr.Create(TextBox,"",True,1455,300,0,2610,960,True,0,"Arial",8,-2147483643,1)
+Gui.fAddBagsDet.txtNoTubeScr.NumericOnly(2)
+Gui.fAddBagsDet.txtNoTubeScr.Event(LostFocus,LostFocus2)
+Gui.fAddBagsDet.txtNoTubeScr.TabStop(True)
+Gui.fAddBagsDet.txtNoTubeScr.TabIndex(3)
+Gui.fAddBagsDet.lbl3.Create(Label,"No. of Tubes scrapped",True,1935,255,0,195,1065,True,0,"Arial",8,-2147483633,0)
+Gui.fAddBagsDet.lbl4.Create(Label,"Amount of Scrap (Lbs)",True,1935,255,0,4605,270,True,0,"Arial",8,-2147483633,0)
+Gui.fAddBagsDet.txtLbsScrap.Create(TextBox,"",True,1455,300,0,7005,180,True,0,"Arial",8,-2147483643,1)
+Gui.fAddBagsDet.txtLbsScrap.Event(LostFocus,LostFocus2)
+Gui.fAddBagsDet.txtLbsScrap.TabStop(True)
+Gui.fAddBagsDet.txtLbsScrap.TabIndex(5)
+Gui.fAddBagsDet.lbl5.Create(Label,"Total Bags",True,1935,255,0,195,1830,True,0,"Arial",8,-2147483633,0)
+Gui.fAddBagsDet.lbl5.FontStyle(True,False,False,False,False)
+Gui.fAddBagsDet.txtTotBags.Create(TextBox,"",True,1455,300,0,2610,1755,True,0,"Arial",8,-2147483626,1)
+Gui.fAddBagsDet.txtTotBags.Locked(True)
+Gui.fAddBagsDet.txtTotBags.TabStop(True)
+Gui.fAddBagsDet.txtTotBags.TabIndex(11)
+Gui.fAddBagsDet.lbl6.Create(Label,"Bags per hour",True,1935,255,0,195,2640,True,0,"Arial",8,-2147483633,0)
+Gui.fAddBagsDet.lbl6.FontStyle(True,False,False,False,False)
+Gui.fAddBagsDet.txtBagsPerHr.Create(TextBox,"",True,1455,300,0,2610,2550,True,0,"Arial",8,-2147483626,1)
+Gui.fAddBagsDet.txtBagsPerHr.Locked(True)
+Gui.fAddBagsDet.txtBagsPerHr.TabStop(True)
+Gui.fAddBagsDet.txtBagsPerHr.TabIndex(13)
+Gui.fAddBagsDet.lbl7.Create(Label,"Total Case Overall",True,1935,255,0,4605,2640,True,0,"Arial",8,-2147483633,0)
+Gui.fAddBagsDet.lbl7.FontStyle(True,False,False,False,False)
+Gui.fAddBagsDet.txtTotCases.Create(TextBox,"",True,1455,300,0,7005,2550,True,0,"Arial",8,-2147483626,1)
+Gui.fAddBagsDet.txtTotCases.Locked(True)
+Gui.fAddBagsDet.txtTotCases.TabStop(True)
+Gui.fAddBagsDet.txtTotCases.TabIndex(17)
+Gui.fAddBagsDet.lbl8.Create(Label,"No. of Liners scrapped",True,1935,255,0,195,1440,True,0,"Arial",8,-2147483633,0)
+Gui.fAddBagsDet.txtNoLinerScr.Create(TextBox,"",True,1455,300,0,2610,1350,True,0,"Arial",8,-2147483643,1)
+Gui.fAddBagsDet.txtNoLinerScr.Event(LostFocus,LostFocus2)
+Gui.fAddBagsDet.txtNoLinerScr.TabStop(True)
+Gui.fAddBagsDet.txtNoLinerScr.TabIndex(4)
+Gui.fAddBagsDet.lbl9.Create(Label,"Reason for Scrap",True,1935,255,0,4605,660,True,0,"Arial",8,-2147483633,0)
+Gui.fAddBagsDet.lbl10.Create(Label,"Roll Number of Film Used",True,1935,255,0,4605,1455,True,0,"Arial",8,-2147483633,0)
+Gui.fAddBagsDet.txtRollNoFlm.Create(TextBox,"",True,1455,300,0,7005,1365,True,0,"Arial",8,-2147483643,1)
+Gui.fAddBagsDet.txtRollNoFlm.Event(KeyPressEnter,LostFocus2)
+Gui.fAddBagsDet.txtRollNoFlm.TabStop(True)
+Gui.fAddBagsDet.txtRollNoFlm.TabIndex(8)
+Gui.fAddBagsDet.lbl11.Create(Label,"No. of Sets/Cases",True,1935,255,0,4605,1050,True,0,"Arial",8,-2147483633,0)
+Gui.fAddBagsDet.txtNoSets.Create(TextBox,"",True,1455,300,0,7005,960,True,0,"Arial",8,-2147483643,1)
+Gui.fAddBagsDet.txtNoSets.Event(LostFocus,LostFocus2)
+Gui.fAddBagsDet.txtNoSets.Event(Change,Txt_change_1)
+Gui.fAddBagsDet.txtNoSets.TabStop(True)
+Gui.fAddBagsDet.txtNoSets.TabIndex(7)
+Gui.fAddBagsDet.lbl12.Create(Label,"Total Scrap overall  (Lbs)",True,1935,255,0,4605,3030,True,0,"Arial",8,-2147483633,0)
+Gui.fAddBagsDet.lbl12.FontStyle(True,False,False,False,False)
+Gui.fAddBagsDet.txtTotScrap.Create(TextBox,"",True,1455,300,0,7005,2955,True,0,"Arial",8,-2147483626,1)
+Gui.fAddBagsDet.txtTotScrap.FontStyle(True,False,False,False,False)
+Gui.fAddBagsDet.txtTotScrap.Locked(True)
+Gui.fAddBagsDet.txtTotScrap.TabStop(True)
+Gui.fAddBagsDet.txtTotScrap.TabIndex(18)
+Gui.fAddBagsDet.cmdClrFlds1.Create(Button)
+Gui.fAddBagsDet.cmdClrFlds1.Size(3855,690)
+Gui.fAddBagsDet.cmdClrFlds1.Position(4635,3375)
+Gui.fAddBagsDet.cmdClrFlds1.Caption("Clear Fields")
+Gui.fAddBagsDet.cmdClrFlds1.DefaultValue("")
+Gui.fAddBagsDet.cmdClrFlds1.Event(Click,cmdClrFlds1_Click)
+Gui.fAddBagsDet.cmdClrFlds1.TabStop(True)
+Gui.fAddBagsDet.cmdClrFlds1.TabIndex(10)
+Gui.fAddBagsDet.lbl13.Create(Label,"Total Bags Overall",True,1935,255,0,4605,1830,True,0,"Arial",8,-2147483633,0)
+Gui.fAddBagsDet.lbl13.FontStyle(True,False,False,False,False)
+Gui.fAddBagsDet.txtTotBagsAg.Create(TextBox,"",True,1455,300,0,7005,1755,True,0,"Arial",8,-2147483626,1)
+Gui.fAddBagsDet.txtTotBagsAg.Locked(True)
+Gui.fAddBagsDet.txtTotBagsAg.TabStop(True)
+Gui.fAddBagsDet.txtTotBagsAg.TabIndex(15)
+Gui.fAddBagsDet.lbl14.Create(Label,"Avg. Bags Per Hour",True,1935,255,0,195,3030,True,0,"Arial",8,-2147483633,0)
+Gui.fAddBagsDet.lbl14.FontStyle(True,False,False,False,False)
+Gui.fAddBagsDet.txtBagsPerHrAg.Create(TextBox,"",True,1455,300,0,2610,2955,True,0,"Arial",8,-2147483626,1)
+Gui.fAddBagsDet.txtBagsPerHrAg.Locked(True)
+Gui.fAddBagsDet.txtBagsPerHrAg.TabStop(True)
+Gui.fAddBagsDet.txtBagsPerHrAg.TabIndex(14)
+Gui.fAddBagsDet.ddlScpNt.Create(DropDownList)
+Gui.fAddBagsDet.ddlScpNt.Size(1455,330)
+Gui.fAddBagsDet.ddlScpNt.Position(7005,555)
+Gui.fAddBagsDet.ddlScpNt.TabStop(True)
+Gui.fAddBagsDet.ddlScpNt.TabIndex(6)
+Gui.fAddBagsDet.lbl15.Create(Label,"Total Gaylords",True,1935,255,0,195,2220,True,0,"Arial",8,-2147483633,0)
+Gui.fAddBagsDet.lbl15.FontStyle(True,False,False,False,False)
+Gui.fAddBagsDet.txtNoGL.Create(TextBox,"",True,1455,300,0,2610,2145,True,0,"Arial",8,-2147483626,1)
+Gui.fAddBagsDet.txtNoGL.Locked(True)
+Gui.fAddBagsDet.txtNoGL.TabStop(True)
+Gui.fAddBagsDet.txtNoGL.TabIndex(12)
+Gui.fAddBagsDet.lbl16.Create(Label,"Total Gaylords Overall",True,1935,255,0,4605,2220,True,0,"Arial",8,-2147483633,0)
+Gui.fAddBagsDet.lbl16.FontStyle(True,False,False,False,False)
+Gui.fAddBagsDet.txtTotGL.Create(TextBox,"",True,1455,300,0,7005,2145,True,0,"Arial",8,-2147483626,1)
+Gui.fAddBagsDet.txtTotGL.Locked(True)
+Gui.fAddBagsDet.txtTotGL.TabStop(True)
+Gui.fAddBagsDet.txtTotGL.TabIndex(16)
+Program.Sub.ScreenSU.End
+
+Program.Sub.Preflight.Start
+'v.Global.sRout.Declare(String)
+v.Global.bUpdate.Declare(boolean,false)
+v.Global.iRow.Declare(long,-1)
+v.Global.dTime.Declare(Date)
+Program.Sub.Preflight.End
+
+Program.Sub.Main.Start
+v.Local.sSQL.Declare(String)
+v.Local.sPLCheck.Declare(String)
+f.Intrinsic.Control.try
+F.ODBC.connection!conx.openConnection(v.Ambient.PDSN,v.Ambient.PUser,v.Ambient.PPass)
+'get pl to decide on if its a roll or bag Producline
+f.Intrinsic.string.Build("SELECT RTRIM(PRODUCT_LINE) as PRODUCT_LINE FROM V_JOB_HEADER WHERE JOB = '{0}' and SUFFIX = '{1}'",v.Passed.009990,v.Passed.009991,v.Local.sSQL)
+f.odbc.Connection!conx.executeandreturn(v.local.sSql,v.Local.sPLCheck)
+'stuff we lock or unlock on populate hook
+f.Intrinsic.Control.if(v.Caller.Hook,=,15790)
+	'if Film, enable script 1 and set caption
+	f.Intrinsic.Control.If(v.Local.sPLCheck.Trim,=,"PL","OR",v.Local.sPLCheck.Trim,=,"7L")
+		f.Intrinsic.UI.ChangeCallerProperty(variable.passed.000048, "lock", 0)
+		v.Passed.000048.Set("Add Roll Detail")
+	F.Intrinsic.Control.Else
+		'disable script 1
+		v.Passed.000048.Set("Script 1")
+		f.Intrinsic.UI.ChangeCallerProperty(variable.passed.000048, "lock", 1)
+	f.Intrinsic.Control.EndIf
+	
+	f.Intrinsic.control.callsub(Unload_All)
+
+f.Intrinsic.Control.Elseif(v.Caller.Hook,=,15832)
+	'roll details on script 1 button
+	
+	f.Intrinsic.Control.CallSub(AddRollDet)
+f.Intrinsic.Control.Elseif(v.Caller.Hook,=,15880,"AND",v.Local.sPLCheck.Trim,=,"PB")
+	'bag details on post process
+	.Intrinsic.Control.CallSub(AddBagDet)		
+f.Intrinsic.Control.Else
+	f.Intrinsic.control.callsub(Unload_All)
+f.Intrinsic.Control.EndIf
+f.Intrinsic.Control.catch
+f.Intrinsic.Control.CallSub(catching,"sub",v.Ambient.CurrentSubroutine,"errorno",v.Ambient.ErrorNumber,"errordesc",v.Ambient.ErrorDescription)
+f.Intrinsic.Control.EndTry
+Program.Sub.Main.End
+
+Program.Sub.Unload_All.Start
+f.odbc.Connection!conx.Close
+f.Intrinsic.Control.End
+Program.Sub.Unload_All.End
+
+Program.Sub.txt_Change.Start
+v.Local.iDiv.Declare(float)
+v.Local.iHold.Declare(float)
+v.Local.iHold2.Declare(float)
+v.Local.iCoreWtWc.Declare(float)
+v.Local.iGgeWt.Declare(float)
+v.Local.sTemp.Declare(String)
+v.Local.iCoreWt.Declare(float)
+v.Local.sSQL.Declare(String)
+f.intrinsic.Control.Try
+f.Intrinsic.Control.BlockEvents
+
+'calculate stuff on text change event for fields
+f.Intrinsic.Control.If(v.Screen.fAddRollDet!txtRollWt.text,=,"")
+	f.Intrinsic.Control.UnBlockEvents
+	f.Intrinsic.Control.ExitSub
+	
+f.Intrinsic.Control.ElseIf(v.Screen.fAddRollDet!txtMsdLayFlat.text,=,"")
+	f.Intrinsic.Control.UnBlockEvents
+	f.Intrinsic.Control.ExitSub
+	
+
+f.Intrinsic.Control.ElseIf(v.Screen.fAddRollDet!txtSmpGmWt.text,=,"")
+	f.Intrinsic.Control.UnBlockEvents
+	f.Intrinsic.Control.ExitSub
+	
+
+f.Intrinsic.Control.ElseIf(v.Screen.fAddRollDet!txtNipSpd.text,=,"")
+	f.Intrinsic.Control.UnBlockEvents
+	f.Intrinsic.Control.ExitSub
+	
+f.Intrinsic.Control.Else
+	
+	f.Intrinsic.string.Build("select DIVISOR,CORE_WT FROM GCG_4646_ADDLRTRINFO WHERE ROUTER = (SELECT ROUTER FROM V_JOB_HEADER WHERE JOB = '{0}' and SUFFIX = '{1}')",v.Passed.009990,v.Passed.009991,v.Local.sSQL)
+	f.Data.DataTable.CreateFromSQL("CalcHold","conx",v.Local.sSQL)
+	f.Intrinsic.Control.If(v.DataTable.CalcHold.RowCount,=,0)
+		f.intrinsic.UI.Msgbox("Router associated with the job does not have the required additional details saved in the database. This is required to populate the calculated fields.")
+		f.Intrinsic.Control.UnBlockEvents
+		f.Intrinsic.Control.ExitSub
+		
+	f.Intrinsic.Control.EndIf
+	f.Intrinsic.Control.If(v.DataTable.CalcHold(0).divisor!fieldval,<,1)
+		f.Intrinsic.Control.UI("The additional details associated with the router does not have divisor value saved in the database. This is required to populate the calculated fields.")
+		f.Intrinsic.Control.UnBlockEvents
+		f.Intrinsic.Control.ExitSub
+		
+	f.Intrinsic.Control.EndIf
+	f.Intrinsic.Control.If(v.DataTable.CalcHold(0).core_wt!fieldval,<,1)
+		f.Intrinsic.Control.UI("The additional details associated with the router does not have Core Weight value saved in the database. This is required to populate the calculated fields.")
+		f.Intrinsic.Control.UnBlockEvents
+		f.Intrinsic.Control.ExitSub
+
+	f.Intrinsic.Control.EndIf	
+	'of course you need to calculate stuff. this is based on the addl router info
+	v.Local.iDiv.Set(v.DataTable.CalcHold(0).divisor!fieldval)
+	v.Local.iCoreWt.Set(v.DataTable.CalcHold(0).core_wt!fieldval)
+	f.Intrinsic.math.sub(v.Screen.fAddRollDet!txtRollWt.text,v.Local.iCoreWt,v.Local.iHold)
+	gui.fAddRollDet.txtRollWtWC.Text(v.Local.ihold)
+	v.Local.iCoreWtWc.set(v.Local.iHold)
+	
+	f.Intrinsic.Math.Div(453.592,120,v.Local.ihold)
+	f.Intrinsic.Math.Div(v.Local.ihold,v.Screen.fAddRollDet!txtMsdLayFlat.text,v.Local.ihold)
+	f.Intrinsic.Math.Mult(v.Screen.fAddRollDet!txtSmpGmWt.text,v.Local.idiv,v.Local.ihold2)
+	f.Intrinsic.Math.Div(v.Local.ihold2,v.Local.ihold,v.Local.iHold)
+	gui.fAddRollDet.txtGgeWt.Text(v.Local.ihold)
+	v.Local.iGgeWt.set(v.Local.iHold)
+	
+	f.Intrinsic.Math.mult(v.Screen.fAddRollDet!txtMsdLayFlat.text,v.Local.iGgeWt,v.Screen.fAddRollDet!txtNipSpd.text,0.048,v.Local.iHold)
+	gui.fAddRollDet.txtLbsPerHr.Text(v.Local.ihold)
+	f.Data.DataTable.Close("CalcHold")
+
+	
+	v.Local.sTemp.Set(v.Screen.fAddRollDet!txtGgeWt.text)
+	F.Intrinsic.String.Format(v.Local.sTemp, "##################0.00", v.Local.sTemp)
+	gui.fAddRollDet.txtGgeWt.Text(v.Local.sTemp)
+	
+	v.Local.sTemp.Set(v.Screen.fAddRollDet!txtRollWtWC.text)
+	F.Intrinsic.String.Format(v.Local.sTemp, "###################0.00", v.Local.sTemp)
+	gui.fAddRollDet.txtRollWtWC.Text(v.Local.sTemp)
+	
+	v.Local.sTemp.Set(v.Screen.fAddRollDet!txtLbsPerHr.text)
+	F.Intrinsic.String.Format(v.Local.sTemp, "###################0.00", v.Local.sTemp)
+	gui.fAddRollDet.txtLbsPerHr.Text(v.Local.sTemp)
+	
+f.Intrinsic.Control.EndIf
+f.Intrinsic.Control.UnBlockEvents
+f.Intrinsic.Control.ExitSub
+f.Intrinsic.Control.catch
+f.Intrinsic.Control.CallSub(catching,"sub",v.Ambient.CurrentSubroutine,"errorno",v.Ambient.ErrorNumber,"errordesc",v.Ambient.ErrorDescription)
+f.Intrinsic.Control.EndTry
+Program.Sub.txt_Change.End
+
+Program.Sub.AddRollDet.Start
+v.Local.sSQL.Declare(String)
+v.Local.sFrmCaption.Declare(String)
+v.Local.sPLCheck.Declare(String)
+v.Local.iCheck.Declare(long)
+v.Local.iRollNo.Declare(long)
+v.Local.fTotLbs.declare(float)
+v.Local.fTotFoot.declare(float)
+v.Local.fTotScrap.declare(float)
+v.Local.fAvgFoot.declare(float)
+v.Local.fAvgGge.declare(float)
+v.Local.fAvgMsd.declare(float)
+v.Local.sScrapNt.Declare(String)
+
+f.Intrinsic.Control.Try
+f.Intrinsic.string.Build("SELECT RTRIM(PRODUCT_LINE) as PRODUCT_LINE FROM V_JOB_HEADER WHERE JOB = '{0}' and SUFFIX = '{1}'",v.Passed.009990,v.Passed.009991,v.Local.sSQL)
+f.odbc.Connection!conx.executeandreturn(v.local.sSql,v.Local.sPLCheck)
+
+f.Intrinsic.Control.If(v.Local.sPLCheck.Trim,=,"PL","OR",v.Local.sPLCheck.Trim,=,"7L")
+	
+	f.Intrinsic.string.Build("select DIVISOR,CORE_WT FROM GCG_4646_ADDLRTRINFO WHERE ROUTER = (SELECT ROUTER FROM V_JOB_HEADER WHERE JOB = '{0}' and SUFFIX = '{1}')",v.Passed.009990,v.Passed.009991,v.Local.sSQL)
+	f.Data.DataTable.CreateFromSQL("CalcHold","conx",v.Local.sSQL)
+	f.Intrinsic.Control.If(v.DataTable.CalcHold.RowCount,=,0)
+		f.intrinsic.UI.Msgbox("Router associated with the job does not have the required additional details saved in the database.This is required in order to log anything against this job.")
+		f.Intrinsic.Control.ExitSub
+	f.Intrinsic.Control.EndIf
+	
+	f.Intrinsic.string.Build("SELECT COUNT(JOB) FROM GCG_4646_SHPFLRDATA1 WHERE JOB = '{0}' and SUFFIX = '{1}' and SEQ = '{2}'",v.Passed.009990,v.Passed.009991,v.Passed.009992,v.Local.sSQL)
+	f.odbc.Connection!conx.executeandreturn(v.local.sSql,v.Local.iCheck)
+	F.Intrinsic.control.If(v.Local.iCheck,=,0)
+		v.Local.iRollNo.Set(1)
+		gui.fAddRollDet.txtRollNo.text(v.Local.iRollNo)
+	f.Intrinsic.Control.Else
+		f.Intrinsic.Math.Add(v.Local.iCheck,1,v.Local.iRollNo)	
+		gui.fAddRollDet.txtRollNo.text(v.Local.iRollNo)
+	f.Intrinsic.Control.EndIf
+	f.Intrinsic.string.Build("Add Roll Details for JOB {0}-{1} SEQ {2}",v.Passed.009990,v.Passed.009991,v.Passed.009992,v.Local.sFrmCaption)
+	gui.fAddRollDet..Caption(v.Local.sFrmCaption)
+	f.Intrinsic.string.Build("Select Roll_no,roll_weight,Measured_layflat,smp_gm_wt,Nip_speed,gauge_by_weight,roll_weight_wo_core,Foot_Count_out,lbs_per_hour,lbs_scrap,scrap_note,lbs_additive,Additive_type,Additive_Pct,blender_setting,rtrim(Created_by) AS Created_by from GCG_4646_SHPFLRDATA1 where JOB = '{0}' and SUFFIX = '{1}' and SEQ = '{2}' order by roll_no desc",v.Passed.009990,v.Passed.009991,v.Passed.009992,v.Local.sSQL)
+	f.data.datatable.CreateFromSQL("RollDetDt","conx",v.Local.sSQL,true)
+	f.Data.Dataview.Create("RollDetDt","RollDetVw",22)
+	v.Local.sScrapNt.Set("Blew Holes*!*Blocking*!*Carbons/Unmelts*!*Changeover*!*Color Bleed*!*Color Issue*!*Core Alignment*!*Die Lines*!*Film Wander*!*Gauge Band*!*Gauge Fluctuation*!*Gusset Adjustment*!*Heat Issue/Shark Skin*!*Lay Flat Issue*!*Mechanical Adjustment*!*Mechanical Malfunction*!*Print Issue*!*Purge*!*Samples*!*Shut Down*!*Splicing/Cut over Issue*!*Start-up*!*Telescoping*!*Tension Issue*!*Wrinkles*!*Wrong Formulation")
+	
+	gui.fAddRollDet.ddlScpNt.ClearItems
+	gui.fAddRollDet.ddlScpNt.additem("")
+	gui.fAddRollDet.ddlScpNt.additem("Blew Holes")
+	gui.fAddRollDet.ddlScpNt.additem("Blocking")
+	gui.fAddRollDet.ddlScpNt.additem("Carbons/Unmelts")
+	gui.fAddRollDet.ddlScpNt.additem("Changeover")
+	gui.fAddRollDet.ddlScpNt.additem("Color Bleed")
+	gui.fAddRollDet.ddlScpNt.additem("Color Issue")
+	gui.fAddRollDet.ddlScpNt.additem("Core Alignment")
+	gui.fAddRollDet.ddlScpNt.additem("Die Lines")
+	gui.fAddRollDet.ddlScpNt.additem("Film Wander")
+	gui.fAddRollDet.ddlScpNt.additem("Gauge Band")
+	gui.fAddRollDet.ddlScpNt.additem("Gauge Fluctuation")
+	gui.fAddRollDet.ddlScpNt.additem("Gusset Adjustment")
+	gui.fAddRollDet.ddlScpNt.additem("Heat Issue/Shark Skin")
+	gui.fAddRollDet.ddlScpNt.additem("Lay Flat Issue")
+	gui.fAddRollDet.ddlScpNt.additem("Mechanical Adjustment")
+	gui.fAddRollDet.ddlScpNt.additem("Mechanical Malfunction")
+	gui.fAddRollDet.ddlScpNt.additem("Print Issue")
+	gui.fAddRollDet.ddlScpNt.additem("Purge")
+	gui.fAddRollDet.ddlScpNt.additem("Samples")
+	gui.fAddRollDet.ddlScpNt.additem("Shut Down") 
+	gui.fAddRollDet.ddlScpNt.additem("Splicing/Cut over Issue")
+	gui.fAddRollDet.ddlScpNt.additem("Start-up")
+	gui.fAddRollDet.ddlScpNt.additem("Telescoping")
+	gui.fAddRollDet.ddlScpNt.additem("Tension Issue")
+	gui.fAddRollDet.ddlScpNt.additem("Wrinkles")
+	gui.fAddRollDet.ddlScpNt.additem("Wrong Formulation")
+	
+	
+	gui.fAddRollDet.GsGcRollDet.AddGridviewFromDataview("RollDetGrid","RollDetDt","RollDetVw")
+	
+	gui.fAddRollDet.GsGcRollDet.SetColumnProperty("RollDetGrid","created_by","visible","false")
+	
+	gui.fAddRollDet.GsGcRollDet.anchor(5)
+	gui.fAddRollDet.lbl14.anchor(5)
+	gui.fAddRollDet.lbl15.anchor(5)
+	gui.fAddRollDet.lbl20.anchor(5)
+	gui.fAddRollDet.lbl21.anchor(5)
+	gui.fAddRollDet.lbl22.anchor(5)
+	gui.fAddRollDet.txtAvgFoot.anchor(5)
+	gui.fAddRollDet.txtAvgGge.anchor(5)
+	gui.fAddRollDet.txtTotFoot.anchor(5)
+	gui.fAddRollDet.txtTotLbs.anchor(5)
+	gui.fAddRollDet.txtTotScrap.anchor(5)
+	
+	
+	
+	
+	gui.fAddRollDet.GsGcRollDet.SetColumnProperty("RollDetGrid","Roll_no","headerforecolor", v.Color.PRI-GSS-00)
+	gui.fAddRollDet.GsGcRollDet.SetColumnProperty("RollDetGrid","Roll_no","headerfontbold", true)
+	gui.fAddRollDet.GsGcRollDet.SetColumnProperty("RollDetGrid","Roll_no","caption","Roll No")
+	gui.fAddRollDet.GsGcRollDet.SetColumnProperty("RollDetGrid","Roll_no","readonly", true)
+	gui.fAddRollDet.GsGcRollDet.SetColumnProperty("RollDetGrid","Roll_no","allowedit", false)
+	gui.fAddRollDet.GsGcRollDet.SetColumnProperty("RollDetGrid","Roll_no","MinWidth", 45)
+	
+	gui.fAddRollDet.GsGcRollDet.SetColumnProperty("RollDetGrid","roll_weight","headerforecolor", v.Color.PRI-GSS-00)
+	gui.fAddRollDet.GsGcRollDet.SetColumnProperty("RollDetGrid","roll_weight","headerfontbold", true)
+	gui.fAddRollDet.GsGcRollDet.SetColumnProperty("RollDetGrid","roll_weight","caption","Roll Wt")
+	gui.fAddRollDet.GsGcRollDet.SetColumnProperty("RollDetGrid","roll_weight","readonly", true)
+	gui.fAddRollDet.GsGcRollDet.SetColumnProperty("RollDetGrid","roll_weight","allowedit", false)
+	gui.fAddRollDet.GsGcRollDet.SetColumnProperty("RollDetGrid","roll_weight","MinWidth", 40)
+	
+	gui.fAddRollDet.GsGcRollDet.SetColumnProperty("RollDetGrid","roll_weight","headerforecolor", v.Color.PRI-GSS-00)
+	gui.fAddRollDet.GsGcRollDet.SetColumnProperty("RollDetGrid","roll_weight","headerfontbold", true)
+	gui.fAddRollDet.GsGcRollDet.SetColumnProperty("RollDetGrid","roll_weight","caption","Roll Wt")
+	gui.fAddRollDet.GsGcRollDet.SetColumnProperty("RollDetGrid","roll_weight","readonly", true)
+	gui.fAddRollDet.GsGcRollDet.SetColumnProperty("RollDetGrid","roll_weight","allowedit", false)
+	gui.fAddRollDet.GsGcRollDet.SetColumnProperty("RollDetGrid","roll_weight","MinWidth", 50)
+	gui.fAddRollDet.GsGcRollDet.SetColumnProperty("RollDetGrid","roll_weight","MaxWidth", 120)
+	
+	gui.fAddRollDet.GsGcRollDet.SetColumnProperty("RollDetGrid","Measured_layflat","headerforecolor", v.Color.PRI-GSS-00)
+	gui.fAddRollDet.GsGcRollDet.SetColumnProperty("RollDetGrid","Measured_layflat","headerfontbold", true)
+	gui.fAddRollDet.GsGcRollDet.SetColumnProperty("RollDetGrid","Measured_layflat","caption","Measured Layflat (in)")
+	gui.fAddRollDet.GsGcRollDet.SetColumnProperty("RollDetGrid","Measured_layflat","readonly", true)
+	gui.fAddRollDet.GsGcRollDet.SetColumnProperty("RollDetGrid","Measured_layflat","allowedit", false)
+	gui.fAddRollDet.GsGcRollDet.SetColumnProperty("RollDetGrid","Measured_layflat","MinWidth", 120)
+	gui.fAddRollDet.GsGcRollDet.SetColumnProperty("RollDetGrid","Measured_layflat","MaxWidth", 200)
+	
+	gui.fAddRollDet.GsGcRollDet.SetColumnProperty("RollDetGrid","smp_gm_wt","headerforecolor", v.Color.PRI-GSS-00)
+	gui.fAddRollDet.GsGcRollDet.SetColumnProperty("RollDetGrid","smp_gm_wt","headerfontbold", true)
+	gui.fAddRollDet.GsGcRollDet.SetColumnProperty("RollDetGrid","smp_gm_wt","caption","10ft Sample Gram Weight")
+	gui.fAddRollDet.GsGcRollDet.SetColumnProperty("RollDetGrid","smp_gm_wt","readonly", true)
+	gui.fAddRollDet.GsGcRollDet.SetColumnProperty("RollDetGrid","smp_gm_wt","allowedit", false)
+	gui.fAddRollDet.GsGcRollDet.SetColumnProperty("RollDetGrid","smp_gm_wt","MinWidth", 120)
+	gui.fAddRollDet.GsGcRollDet.SetColumnProperty("RollDetGrid","smp_gm_wt","MaxWidth", 200)
+	
+	gui.fAddRollDet.GsGcRollDet.SetColumnProperty("RollDetGrid","Nip_speed","headerforecolor", v.Color.PRI-GSS-00)
+	gui.fAddRollDet.GsGcRollDet.SetColumnProperty("RollDetGrid","Nip_speed","headerfontbold", true)
+	gui.fAddRollDet.GsGcRollDet.SetColumnProperty("RollDetGrid","Nip_speed","caption","Nip Speed")
+	gui.fAddRollDet.GsGcRollDet.SetColumnProperty("RollDetGrid","Nip_speed","readonly", true)
+	gui.fAddRollDet.GsGcRollDet.SetColumnProperty("RollDetGrid","Nip_speed","allowedit", false)
+	gui.fAddRollDet.GsGcRollDet.SetColumnProperty("RollDetGrid","Nip_speed","MinWidth", 100)
+	gui.fAddRollDet.GsGcRollDet.SetColumnProperty("RollDetGrid","Nip_speed","MaxWidth", 200)
+	
+	gui.fAddRollDet.GsGcRollDet.SetColumnProperty("RollDetGrid","lbs_scrap","headerforecolor", v.Color.PRI-GSS-00)
+	gui.fAddRollDet.GsGcRollDet.SetColumnProperty("RollDetGrid","lbs_scrap","headerfontbold", true)
+	gui.fAddRollDet.GsGcRollDet.SetColumnProperty("RollDetGrid","lbs_scrap","caption","Scrap (Lbs)")
+	gui.fAddRollDet.GsGcRollDet.SetColumnProperty("RollDetGrid","lbs_scrap","readonly", true)
+	gui.fAddRollDet.GsGcRollDet.SetColumnProperty("RollDetGrid","lbs_scrap","allowedit", false)
+	gui.fAddRollDet.GsGcRollDet.SetColumnProperty("RollDetGrid","lbs_scrap","MinWidth", 100)
+	gui.fAddRollDet.GsGcRollDet.SetColumnProperty("RollDetGrid","lbs_scrap","MaxWidth", 200)
+	
+	gui.fAddRollDet.GsGcRollDet.ColumnEdit("RollDetGrid","scrap_note","Dropdownlist",v.Local.sScrapNt)
+	gui.fAddRollDet.GsGcRollDet.SetColumnProperty("RollDetGrid","scrap_note","headerforecolor", v.Color.PRI-GSS-00)
+	gui.fAddRollDet.GsGcRollDet.SetColumnProperty("RollDetGrid","scrap_note","headerfontbold", true)
+	gui.fAddRollDet.GsGcRollDet.SetColumnProperty("RollDetGrid","scrap_note","caption","Scrap Note")
+	gui.fAddRollDet.GsGcRollDet.SetColumnProperty("RollDetGrid","scrap_note","readonly", false)
+	gui.fAddRollDet.GsGcRollDet.SetColumnProperty("RollDetGrid","scrap_note","allowedit", true)
+	gui.fAddRollDet.GsGcRollDet.SetColumnProperty("RollDetGrid","scrap_note","MinWidth", 100)
+	gui.fAddRollDet.GsGcRollDet.SetColumnProperty("RollDetGrid","scrap_note","MaxWidth", 200)
+	
+	gui.fAddRollDet.GsGcRollDet.SetColumnProperty("RollDetGrid","lbs_additive","headerforecolor", v.Color.PRI-GSS-00)
+	gui.fAddRollDet.GsGcRollDet.SetColumnProperty("RollDetGrid","lbs_additive","headerfontbold", true)
+	gui.fAddRollDet.GsGcRollDet.SetColumnProperty("RollDetGrid","lbs_additive","caption","Additives placed in feeder (Lbs)")
+	gui.fAddRollDet.GsGcRollDet.SetColumnProperty("RollDetGrid","lbs_additive","readonly", true)
+	gui.fAddRollDet.GsGcRollDet.SetColumnProperty("RollDetGrid","lbs_additive","allowedit", false)
+	gui.fAddRollDet.GsGcRollDet.SetColumnProperty("RollDetGrid","lbs_additive","MinWidth", 120)
+	gui.fAddRollDet.GsGcRollDet.SetColumnProperty("RollDetGrid","lbs_additive","MaxWidth", 200)
+	
+	gui.fAddRollDet.GsGcRollDet.SetColumnProperty("RollDetGrid","Additive_type","headerforecolor", v.Color.PRI-GSS-00)
+	gui.fAddRollDet.GsGcRollDet.SetColumnProperty("RollDetGrid","Additive_type","headerfontbold", true)
+	gui.fAddRollDet.GsGcRollDet.SetColumnProperty("RollDetGrid","Additive_type","caption","Additive Type")
+	gui.fAddRollDet.GsGcRollDet.SetColumnProperty("RollDetGrid","Additive_type","readonly", true)
+	gui.fAddRollDet.GsGcRollDet.SetColumnProperty("RollDetGrid","Additive_type","allowedit", false)
+	gui.fAddRollDet.GsGcRollDet.SetColumnProperty("RollDetGrid","Additive_type","MinWidth", 120)
+	gui.fAddRollDet.GsGcRollDet.SetColumnProperty("RollDetGrid","Additive_type","MaxWidth", 200)
+	
+	gui.fAddRollDet.GsGcRollDet.SetColumnProperty("RollDetGrid","Additive_pct","Visible", False)
+'	gui.fAddRollDet.GsGcRollDet.SetColumnProperty("RollDetGrid","Additive_pct","headerforecolor", v.Color.PRI-GSS-00)
+'	gui.fAddRollDet.GsGcRollDet.SetColumnProperty("RollDetGrid","Additive_pct","headerfontbold", true)
+'	gui.fAddRollDet.GsGcRollDet.SetColumnProperty("RollDetGrid","Additive_pct","caption","Additive %")
+'	gui.fAddRollDet.GsGcRollDet.SetColumnProperty("RollDetGrid","Additive_pct","readonly", true)
+'	gui.fAddRollDet.GsGcRollDet.SetColumnProperty("RollDetGrid","Additive_pct","allowedit", false)
+'	gui.fAddRollDet.GsGcRollDet.SetColumnProperty("RollDetGrid","Additive_pct","MinWidth", 120)
+'	gui.fAddRollDet.GsGcRollDet.SetColumnProperty("RollDetGrid","Additive_pct","MaxWidth", 200)
+'	
+	gui.fAddRollDet.GsGcRollDet.SetColumnProperty("RollDetGrid","blender_setting","headerforecolor", v.Color.PRI-GSS-00)
+	gui.fAddRollDet.GsGcRollDet.SetColumnProperty("RollDetGrid","blender_setting","headerfontbold", true)
+	gui.fAddRollDet.GsGcRollDet.SetColumnProperty("RollDetGrid","blender_setting","caption","Blender Setting")
+	gui.fAddRollDet.GsGcRollDet.SetColumnProperty("RollDetGrid","blender_setting","readonly", true)
+	gui.fAddRollDet.GsGcRollDet.SetColumnProperty("RollDetGrid","blender_setting","allowedit", false)
+	gui.fAddRollDet.GsGcRollDet.SetColumnProperty("RollDetGrid","blender_setting","MinWidth", 120)
+	gui.fAddRollDet.GsGcRollDet.SetColumnProperty("RollDetGrid","blender_setting","MaxWidth", 200)
+	
+	gui.fAddRollDet.GsGcRollDet.SetColumnProperty("RollDetGrid","gauge_by_weight","headerforecolor", v.Color.PRI-GSS-00)
+	gui.fAddRollDet.GsGcRollDet.SetColumnProperty("RollDetGrid","gauge_by_weight","headerfontbold", true)
+	gui.fAddRollDet.GsGcRollDet.SetColumnProperty("RollDetGrid","gauge_by_weight","caption","Gauge by Weight (mil)")
+	gui.fAddRollDet.GsGcRollDet.SetColumnProperty("RollDetGrid","gauge_by_weight","readonly", true)
+	gui.fAddRollDet.GsGcRollDet.SetColumnProperty("RollDetGrid","gauge_by_weight","allowedit", false)
+	gui.fAddRollDet.GsGcRollDet.SetColumnProperty("RollDetGrid","gauge_by_weight","MinWidth", 120)
+	gui.fAddRollDet.GsGcRollDet.SetColumnProperty("RollDetGrid","gauge_by_weight","MaxWidth", 200)
+	
+	gui.fAddRollDet.GsGcRollDet.SetColumnProperty("RollDetGrid","roll_weight_wo_core","headerforecolor", v.Color.PRI-GSS-00)
+	gui.fAddRollDet.GsGcRollDet.SetColumnProperty("RollDetGrid","roll_weight_wo_core","headerfontbold", true)
+	gui.fAddRollDet.GsGcRollDet.SetColumnProperty("RollDetGrid","roll_weight_wo_core","caption","Roll Weight (without core)")
+	gui.fAddRollDet.GsGcRollDet.SetColumnProperty("RollDetGrid","roll_weight_wo_core","readonly", true)
+	gui.fAddRollDet.GsGcRollDet.SetColumnProperty("RollDetGrid","roll_weight_wo_core","allowedit", false)
+	gui.fAddRollDet.GsGcRollDet.SetColumnProperty("RollDetGrid","roll_weight_wo_core","MinWidth", 120)
+	gui.fAddRollDet.GsGcRollDet.SetColumnProperty("RollDetGrid","roll_weight_wo_core","MaxWidth", 200)
+	
+	gui.fAddRollDet.GsGcRollDet.SetColumnProperty("RollDetGrid","foot_count_out","headerforecolor", v.Color.PRI-GSS-00)
+	gui.fAddRollDet.GsGcRollDet.SetColumnProperty("RollDetGrid","foot_count_out","headerfontbold", true)
+	gui.fAddRollDet.GsGcRollDet.SetColumnProperty("RollDetGrid","foot_count_out","caption","Foot Count Output")
+	gui.fAddRollDet.GsGcRollDet.SetColumnProperty("RollDetGrid","foot_count_out","readonly", true)
+	gui.fAddRollDet.GsGcRollDet.SetColumnProperty("RollDetGrid","foot_count_out","allowedit", false)
+	gui.fAddRollDet.GsGcRollDet.SetColumnProperty("RollDetGrid","foot_count_out","MinWidth", 100)
+	gui.fAddRollDet.GsGcRollDet.SetColumnProperty("RollDetGrid","foot_count_out","MaxWidth", 200)
+	
+	gui.fAddRollDet.GsGcRollDet.SetColumnProperty("RollDetGrid","lbs_per_hour","headerforecolor", v.Color.PRI-GSS-00)
+	gui.fAddRollDet.GsGcRollDet.SetColumnProperty("RollDetGrid","lbs_per_hour","headerfontbold", true)
+	gui.fAddRollDet.GsGcRollDet.SetColumnProperty("RollDetGrid","lbs_per_hour","caption","Pounds per hour")
+	gui.fAddRollDet.GsGcRollDet.SetColumnProperty("RollDetGrid","lbs_per_hour","readonly", true)
+	gui.fAddRollDet.GsGcRollDet.SetColumnProperty("RollDetGrid","lbs_per_hour","allowedit", false)
+	gui.fAddRollDet.GsGcRollDet.SetColumnProperty("RollDetGrid","lbs_per_hour","MinWidth", 100)
+	gui.fAddRollDet.GsGcRollDet.SetColumnProperty("RollDetGrid","lbs_per_hour","MaxWidth", 200)
+	
+	gui.fAddRollDet.GsGcRollDet.MainView("RollDetGrid")
+	f.Data.DataTable.Compute("RollDetDt","Sum(roll_weight_wo_core)","",v.Local.fTotLbs)
+	f.Data.DataTable.Compute("RollDetDt","Sum(foot_count_out)","",v.Local.fTotFoot)
+	f.Data.DataTable.Compute("RollDetDt","Sum(lbs_scrap)","",v.Local.fTotScrap)
+	f.Data.DataTable.Compute("RollDetDt","Avg(foot_count_out)","",v.Local.fAvgFoot)
+	f.Data.DataTable.Compute("RollDetDt","Avg(gauge_by_weight)","",v.Local.fAvgGge)
+	f.Data.DataTable.Compute("RollDetDt","Avg(Measured_layflat)","",v.Local.fAvgMsd)
+	
+
+	gui.fAddRollDet.txtTotLbs.Text(v.Local.fTotLbs)
+	gui.fAddRollDet.txtTotFoot.Text(v.Local.fTotFoot)
+	gui.fAddRollDet.txtTotScrap.Text(v.Local.fTotScrap)
+	gui.fAddRollDet.txtAvgFoot.Text(v.Local.fAvgFoot)
+	gui.fAddRollDet.txtAvgGge.Text(v.Local.fAvgGge)
+	gui.fAddRollDet.txtAvgMsd.Text(v.Local.fAvgMsd)
+	
+	gui.fAddRollDet..Show
+	gui.fAddRollDet..SetFocus	
+	
+F.Intrinsic.Control.Else
+	f.Intrinsic.Control.ExitSub
+F.Intrinsic.Control.EndIf
+f.Intrinsic.Control.catch
+f.Intrinsic.Control.CallSub(catching,"sub",v.Ambient.CurrentSubroutine,"errorno",v.Ambient.ErrorNumber,"errordesc",v.Ambient.ErrorDescription)
+f.Intrinsic.Control.EndTry
+
+
+Program.Sub.AddRollDet.End
+
+Program.Sub.LostFocus1.Start
+f.Intrinsic.Control.Try
+v.Local.sTemp.Declare(String)
+f.Intrinsic.Control.BlockEvents
+
+'format numerical fields on lost focus
+v.Local.sTemp.Set(v.Screen.fAddRollDet!txtRollWt.text)
+F.Intrinsic.String.Format(v.Local.sTemp, "#########0.00", v.Local.sTemp)
+gui.fAddRollDet.txtRollWt.Text(v.Local.sTemp)
+
+v.Local.sTemp.Set(v.Screen.fAddRollDet!txtMsdLayFlat.text)
+F.Intrinsic.String.Format(v.Local.sTemp, "#########0.00", v.Local.sTemp)
+gui.fAddRollDet.txtMsdLayFlat.Text(v.Local.sTemp)
+
+v.Local.sTemp.Set(v.Screen.fAddRollDet!txtSmpGmWt.text)
+F.Intrinsic.String.Format(v.Local.sTemp, "#########0.00", v.Local.sTemp)
+gui.fAddRollDet.txtSmpGmWt.Text(v.Local.sTemp)
+
+v.Local.sTemp.Set(v.Screen.fAddRollDet!txtNipSpd.text)
+F.Intrinsic.String.Format(v.Local.sTemp, "#########0", v.Local.sTemp)
+gui.fAddRollDet.txtNipSpd.Text(v.Local.sTemp)
+
+v.Local.sTemp.Set(v.Screen.fAddRollDet!txtScrap.text)
+F.Intrinsic.String.Format(v.Local.sTemp, "#########0.00", v.Local.sTemp)
+gui.fAddRollDet.txtScrap.Text(v.Local.sTemp)
+
+v.Local.sTemp.Set(v.Screen.fAddRollDet!txtLbsAdd.text)
+F.Intrinsic.String.Format(v.Local.sTemp, "#########0.00", v.Local.sTemp)
+gui.fAddRollDet.txtLbsAdd.Text(v.Local.sTemp)
+
+v.Local.sTemp.Set(v.Screen.fAddRollDet!txtLbsAdd.text)
+F.Intrinsic.String.Format(v.Local.sTemp, "#########0.00", v.Local.sTemp)
+gui.fAddRollDet.txtLbsAdd.Text(v.Local.sTemp)
+
+v.Local.sTemp.Set(v.Screen.fAddRollDet!txtBlndPct.text)
+F.Intrinsic.String.Format(v.Local.sTemp, "##0.00", v.Local.sTemp)
+gui.fAddRollDet.txtBlndPct.Text(v.Local.sTemp)
+
+'v.Local.sTemp.Set(v.Screen.fAddRollDet!txtAddPct.text)
+'F.Intrinsic.String.Format(v.Local.sTemp, "##0.00", v.Local.sTemp)
+'gui.fAddRollDet.txtAddPct.Text(v.Local.sTemp)
+
+v.Local.sTemp.Set(v.Screen.fAddRollDet!txtFtCntOut.text)
+F.Intrinsic.String.Format(v.Local.sTemp, "##0.00", v.Local.sTemp)
+gui.fAddRollDet.txtFtCntOut.Text(v.Local.sTemp)
+
+f.Intrinsic.Control.UnBlockEvents
+f.Intrinsic.Control.catch
+f.Intrinsic.Control.CallSub(catching,"sub",v.Ambient.CurrentSubroutine,"errorno",v.Ambient.ErrorNumber,"errordesc",v.Ambient.ErrorDescription)
+f.Intrinsic.Control.EndTry
+
+Program.Sub.LostFocus1.End
+
+Program.Sub.cmdSaveRollDt_Click.Start
+v.Local.sSql.Declare(String)
+v.Local.sMSG.Declare(String)
+v.Local.iCheck.Declare(long)
+v.Local.iRollNo.Declare(long)
+v.Local.fTotLbs.declare(float)
+v.Local.fTotFoot.declare(float)
+v.Local.fTotScrap.declare(float)
+v.Local.fAvgFoot.declare(float)
+v.Local.fAvgGge.declare(float)
+v.Local.sAddPct.Declare(String)
+v.Local.sLbsAdd.Declare(String)
+v.Local.sBlndSet.Declare(String)
+
+
+
+f.Intrinsic.Control.Try
+f.Intrinsic.Control.CallSub(LostFocus1)
+'v.Local.sAddPct.Set(v.Screen.fAddRollDet!txtAddPct.text)
+v.Local.sLbsAdd.Set(v.Screen.fAddRollDet!txtLbsAdd.text)
+v.Local.sBlndSet.Set(v.Screen.fAddRollDet!txtBlndPct.text)
+gui.fAddRollDet..Enabled(false)
+f.Intrinsic.Control.If(v.Screen.fAddRollDet!txtRollWt.text.trim,=,"")
+	f.intrinsic.UI.Msgbox("Roll Weight field is empty. Ensure that the field isn't empty before saving the roll details.")
+	gui.fAddRollDet..Enabled(True)
+	f.Intrinsic.Control.ExitSub
+F.Intrinsic.Control.EndIf
+f.Intrinsic.Control.If(v.Screen.fAddRollDet!txtMsdLayFlat.text.trim,=,"")
+	f.intrinsic.UI.Msgbox("Measured Layflat field is empty. Ensure that the field isn't empty before saving the roll details.")
+	gui.fAddRollDet..Enabled(True)
+	f.Intrinsic.Control.ExitSub
+	
+F.Intrinsic.Control.EndIf
+f.Intrinsic.Control.If(v.Screen.fAddRollDet!txtSmpGmWt.text.trim,=,"")
+	f.intrinsic.UI.Msgbox("10 Ft Sample gram weight field is empty. Ensure that the field isn't empty before saving the roll details.")
+	gui.fAddRollDet..Enabled(True)
+	f.Intrinsic.Control.ExitSub
+F.Intrinsic.Control.EndIf
+f.Intrinsic.Control.If(v.Screen.fAddRollDet!txtNipSpd.text.trim,=,"")
+	f.intrinsic.UI.Msgbox("Nip Speed field is empty. Ensure that the field isn't empty before saving the roll details.")
+	gui.fAddRollDet..Enabled(True)
+	f.Intrinsic.Control.ExitSub
+F.Intrinsic.Control.EndIf
+f.Intrinsic.Control.If(v.Screen.fAddRollDet!txtScrap.text.trim,<>,"")
+	f.Intrinsic.Control.If(v.Screen.fAddRollDet!ddlScpNt.text.trim,=,"")
+		f.intrinsic.UI.Msgbox("Scrap Reason hasn't been selected.")
+		gui.fAddRollDet..Enabled(True)
+		f.Intrinsic.Control.ExitSub
+	f.Intrinsic.Control.EndIf
+F.Intrinsic.Control.EndIf
+f.Intrinsic.Control.If(v.Screen.fAddRollDet!txtFtCntOut.text.trim,=,"")
+	f.intrinsic.UI.Msgbox("Foot counter output field is empty. Ensure that the field isn't empty before saving the roll details.")
+	gui.fAddRollDet..Enabled(True)
+	f.Intrinsic.Control.ExitSub
+F.Intrinsic.Control.EndIf
+f.Intrinsic.Control.CallSub(txt_Change)
+f.Intrinsic.string.Build("SELECT COUNT(JOB) FROM GCG_4646_SHPFLRDATA1 WHERE JOB = '{0}' and SUFFIX = '{1}' and SEQ = '{2}'",v.Passed.009990,v.Passed.009991,v.Passed.009992,v.Local.sSQL)
+f.odbc.Connection!conx.executeandreturn(v.local.sSql,v.Local.iRollNo)
+gui.fAddRollDet.GsGcRollDet.SuspendLayout
+f.Intrinsic.Control.If(v.global.bUpdate,=,false)
+	f.Intrinsic.string.Build("SELECT COUNT(JOB) FROM GCG_4646_SHPFLRDATA1 WHERE JOB = '{0}' and SUFFIX = '{1}' and SEQ = '{2}'",v.Passed.009990,v.Passed.009991,v.Passed.009992,v.Local.sSQL)
+	f.odbc.Connection!conx.executeandreturn(v.local.sSql,v.Local.iRollNo)
+	f.Intrinsic.Math.Add(v.Local.iRollNo,1,v.Local.iRollNo)
+	f.Intrinsic.String.build("INSERT INTO GCG_4646_SHPFLRDATA1  (JOB,SUFFIX,SEQ,ROLL_NO,ROLL_WEIGHT,MEASURED_LAYFLAT,SMP_GM_WT,LBS_SCRAP,SCRAP_NOTE,LBS_ADDITIVE,ADDITIVE_TYPE,BLENDER_SETTING,GAUGE_BY_WEIGHT,ROLL_WEIGHT_WO_CORE,LBS_PER_HOUR,CREATED_BY,NIP_SPEED,FOOT_COUNT_OUT) VALUES  ('{0}','{1}','{2}','{3}','{4}','{5}','{6}','{7}','{8}','{9}','{10}','{11}','{12}','{13}','{14}','{15}','{16}','{17}')",v.Passed.009990,v.Passed.009991,v.Passed.009992,v.Local.iRollNo,v.Screen.fAddRollDet!txtRollWt.text,v.Screen.fAddRollDet!txtMsdLayFlat.text,v.Screen.fAddRollDet!txtSmpGmWt.text,v.Screen.fAddRollDet!txtScrap.text.float,v.Screen.fAddRollDet!ddlScpNt.text,v.Local.sLbsAdd.float,v.Screen.fAddRollDet!txtaddType.text.PSQLFriendly,v.Local.sBlndSet.PSQLFriendly,v.Screen.fAddRollDet!txtGgeWt.text,v.Screen.fAddRollDet!txtRollWtWC.text,v.Screen.fAddRollDet!txtLbsPerHr.text,v.passed.009994,v.Screen.fAddRollDet!txtNipSpd.text,v.Screen.fAddRollDet!txtFtCntOut.text,V.Local.sSql)
+	f.odbc.Connection!conx.execute(v.Local.sSql)
+	f.Data.DataTable.AddRow("RollDetDt","ROLL_NO",v.Screen.fAddRollDet!txtRollNo.text,"ROLL_WEIGHT",v.Screen.fAddRollDet!txtRollWt.text,"MEASURED_LAYFLAT",v.Screen.fAddRollDet!txtMsdLayFlat.text,"SMP_GM_WT",v.Screen.fAddRollDet!txtSmpGmWt.text,"NIP_SPEED",v.Screen.fAddRollDet!txtNipSpd.text,"LBS_SCRAP",v.Screen.fAddRollDet!txtScrap.text.float,"SCRAP_NOTE",v.Screen.fAddRollDet!ddlScpNt.text,"LBS_ADDITIVE",v.Local.sLbsAdd.Float,"ADDITIVE_TYPE",v.Screen.fAddRollDet!txtaddType.text.PSQLFriendly,"BLENDER_SETTING",v.Local.sBlndSet.PSQLFriendly,"GAUGE_BY_WEIGHT",v.Screen.fAddRollDet!txtGgeWt.text,"ROLL_WEIGHT_WO_CORE",v.Screen.fAddRollDet!txtRollWtWC.text,"LBS_PER_HOUR",v.Screen.fAddRollDet!txtLbsPerHr.text,"CREATED_BY",v.passed.009994,"FOOT_COUNT_OUT",v.Screen.fAddRollDet!txtFtCntOut.text)
+	f.Intrinsic.Control.If(v.Local.iRollNo,=,v.Screen.fAddRollDet!txtRollNo.text)
+		f.Intrinsic.String.Build("Roll details has been saved against Roll No - {0}",v.Local.iRollNo,v.Local.sMSG)
+		f.Intrinsic.UI.Msgbox(v.Local.sMSG)
+	f.Intrinsic.Control.else
+		f.Intrinsic.String.Build("Roll No has been changed. Roll details has been saved against Roll No - {0}",v.Local.iRollNo,v.Local.sMSG)
+		f.Intrinsic.UI.Msgbox(v.Local.sMSG)
+	F.Intrinsic.Control.EndIf
+f.Intrinsic.Control.else
+	f.Intrinsic.string.Build("UPDATE GCG_4646_SHPFLRDATA1 SET ROLL_WEIGHT = '{0}',MEASURED_LAYFLAT = '{1}',SMP_GM_WT = '{2}',LBS_SCRAP = '{3}',SCRAP_NOTE = '{4}',LBS_ADDITIVE = '{5}',ADDITIVE_TYPE = '{6}', BLENDER_SETTING = '{7}',GAUGE_BY_WEIGHT = '{8}',ROLL_WEIGHT_WO_CORE = '{9}',LBS_PER_HOUR = '{11}',NIP_SPEED = '{12}',MODIFIED_BY = '{13}',FOOT_COUNT_OUT = '{14}' WHERE JOB = '{15}' AND SUFFIX = '{16}' AND SEQ = '{17}' AND ROLL_NO = '{18}'",v.Screen.fAddRollDet!txtRollWt.text,v.Screen.fAddRollDet!txtMsdLayFlat.text,v.Screen.fAddRollDet!txtSmpGmWt.text,v.Screen.fAddRollDet!txtScrap.text.float,v.Screen.fAddRollDet!ddlScpNt.text,v.Local.sLbsAdd,v.Screen.fAddRollDet!txtaddType.text.PSQLFriendly,v.Local.sBlndSet.PSQLFriendly,v.Screen.fAddRollDet!txtGgeWt.text,v.Screen.fAddRollDet!txtRollWtWC.text,v.Screen.fAddRollDet!txtRollWtWC.text,v.Screen.fAddRollDet!txtLbsPerHr.text,v.Screen.fAddRollDet!txtNipSpd.text,v.passed.009994,v.Screen.fAddRollDet!txtFtCntOut.text,v.Passed.009990,v.Passed.009991,v.Passed.009992,v.Screen.fAddRollDet!txtRollNo.text,V.Local.sSql)
+	f.odbc.Connection!conx.execute(v.Local.sSql)
+	f.Data.DataTable.DeleteRow("RollDetDt",v.Global.iRow)
+	f.Data.DataTable.AddRow("RollDetDt","ROLL_NO",v.Screen.fAddRollDet!txtRollNo.text,"ROLL_WEIGHT",v.Screen.fAddRollDet!txtRollWt.text,"MEASURED_LAYFLAT",v.Screen.fAddRollDet!txtMsdLayFlat.text,"SMP_GM_WT",v.Screen.fAddRollDet!txtSmpGmWt.text,"NIP_SPEED",v.Screen.fAddRollDet!txtNipSpd.text,"LBS_SCRAP",v.Screen.fAddRollDet!txtScrap.text.float,"SCRAP_NOTE",v.Screen.fAddRollDet!ddlScpNt.text,"LBS_ADDITIVE",v.Local.sLbsAdd.Float,"ADDITIVE_TYPE",v.Screen.fAddRollDet!txtaddType.text.PSQLFriendly,"BLENDER_SETTING",v.Local.sBlndSet.PSQLFriendly,"GAUGE_BY_WEIGHT",v.Screen.fAddRollDet!txtGgeWt.text,"ROLL_WEIGHT_WO_CORE",v.Screen.fAddRollDet!txtRollWtWC.text,"LBS_PER_HOUR",v.Screen.fAddRollDet!txtLbsPerHr.text,"CREATED_BY",v.passed.009994,"FOOT_COUNT_OUT",v.Screen.fAddRollDet!txtFtCntOut.text)
+	v.Global.iRow.Set(-1)
+F.Intrinsic.Control.EndIf
+f.Data.DataView.SetSort("RollDetDt","RollDetVw","roll_no DESC")
+f.Data.DataTable.Compute("RollDetDt","Sum(roll_weight_wo_core)","",v.Local.fTotLbs)
+f.Data.DataTable.Compute("RollDetDt","Sum(FOOT_COUNT_OUT)","",v.Local.fTotFoot)
+f.Data.DataTable.Compute("RollDetDt","Sum(lbs_scrap)","",v.Local.fTotScrap)
+f.Data.DataTable.Compute("RollDetDt","Avg(foot_count_out)","",v.Local.fAvgFoot)
+f.Data.DataTable.Compute("RollDetDt","Avg(gauge_by_weight)","",v.Local.fAvgGge)
+
+
+gui.fAddRollDet.txtTotLbs.Text(v.Local.fTotLbs)
+gui.fAddRollDet.txtTotFoot.Text(v.Local.fTotFoot)
+gui.fAddRollDet.txtTotScrap.Text(v.Local.fTotScrap)
+gui.fAddRollDet.txtAvgFoot.Text(v.Local.fAvgFoot)
+gui.fAddRollDet.txtAvgGge.Text(v.Local.fAvgGge)
+gui.fAddRollDet.GsGcRollDet.ResumeLayout
+
+f.Intrinsic.Control.CallSub(cmdClrFlds_Click)
+
+gui.fAddRollDet..Enabled(true)
+gui.fAddRollDet..SetFocus
+f.Intrinsic.Control.catch
+f.Intrinsic.Control.CallSub(catching,"sub",v.Ambient.CurrentSubroutine,"errorno",v.Ambient.ErrorNumber,"errordesc",v.Ambient.ErrorDescription)
+f.Intrinsic.Control.EndTry
+Program.Sub.cmdSaveRollDt_Click.End
+
+Program.Sub.cmdClrFlds_Click.Start
+f.Intrinsic.Control.Try
+v.Local.sSql.Declare(String)
+v.Local.iCheck.Declare(long)
+v.Local.iRollNo.Declare(long)
+f.Intrinsic.Control.BlockEvents
+f.Intrinsic.string.Build("SELECT COUNT(JOB) FROM GCG_4646_SHPFLRDATA1 WHERE JOB = '{0}' and SUFFIX = '{1}' and SEQ = '{2}'",v.Passed.009990,v.Passed.009991,v.Passed.009992,v.Local.sSQL)
+f.odbc.Connection!conx.executeandreturn(v.local.sSql,v.Local.iCheck)
+F.Intrinsic.control.If(v.Local.iCheck,=,0)
+	v.Local.iRollNo.Set(1)
+	gui.fAddRollDet.txtRollNo.text(v.Local.iRollNo)
+f.Intrinsic.Control.Else
+	f.Intrinsic.Math.Add(v.Local.iCheck,1,v.Local.iRollNo)	
+	gui.fAddRollDet.txtRollNo.text(v.Local.iRollNo)
+f.Intrinsic.Control.EndIf
+
+gui.fAddRollDet.txtRollWt.Text("")
+gui.fAddRollDet.txtMsdLayFlat.Text("")
+gui.fAddRollDet.txtSmpGmWt.Text("")
+gui.fAddRollDet.txtNipSpd.Text("")
+gui.fAddRollDet.txtScrap.Text("")
+gui.fAddRollDet.ddlScpNt.Text("")
+gui.fAddRollDet.txtLbsAdd.Text("")
+gui.fAddRollDet.txtaddType.Text("")
+gui.fAddRollDet.txtBlndPct.Text("")
+gui.fAddRollDet.txtGgeWt.Text("")
+gui.fAddRollDet.txtRollWtWC.Text("")
+gui.fAddRollDet.txtLbsPerHr.Text("")
+gui.fAddRollDet.txtFtCntOut.Text("")
+'gui.fAddRollDet.txtAddPct.Text("")
+v.Global.bUpdate.set(false)
+f.Intrinsic.Control.UnBlockEvents
+gui.fAddRollDet..SetFocus
+f.Intrinsic.Control.catch
+f.Intrinsic.Control.CallSub(catching,"sub",v.Ambient.CurrentSubroutine,"errorno",v.Ambient.ErrorNumber,"errordesc",v.Ambient.ErrorDescription)
+f.Intrinsic.Control.EndTry
+Program.Sub.cmdClrFlds_Click.End
+
+Program.Sub.GsGcRollDet_RowCellClick.Start
+f.Intrinsic.Control.try
+f.Intrinsic.Control.If(v.Args.clicks,<,2)
+	f.Intrinsic.Control.ExitSub
+f.Intrinsic.Control.EndIf
+
+f.Intrinsic.Control.BlockEvents
+f.Intrinsic.Control.If(v.passed.009994,<>,v.DataTable.RollDetDt(v.Args.rowindex).Created_by!fieldval)
+	f.Intrinsic.UI.Msgbox("Current User does not have access to edit this line.")
+	f.Intrinsic.Control.UnBlockEvents
+	f.Intrinsic.Control.ExitSub
+f.Intrinsic.Control.EndIf
+v.Global.iRow.Set(v.args.rowindex)
+
+gui.fAddRollDet.txtRollNo.Text(v.DataTable.RollDetDt(v.Args.rowindex).Roll_no!fieldval)
+gui.fAddRollDet.txtRollWt.Text(v.DataTable.RollDetDt(v.Args.rowindex).ROLL_WEIGHT!fieldval)
+gui.fAddRollDet.txtMsdLayFlat.Text(v.DataTable.RollDetDt(v.Args.rowindex).MEASURED_LAYFLAT!fieldval)
+gui.fAddRollDet.txtSmpGmWt.Text(v.DataTable.RollDetDt(v.Args.rowindex).SMP_GM_WT!fieldval)
+gui.fAddRollDet.txtNipSpd.Text(v.DataTable.RollDetDt(v.Args.rowindex).NIP_SPEED!fieldval)
+gui.fAddRollDet.txtScrap.Text(v.DataTable.RollDetDt(v.Args.rowindex).LBS_SCRAP!fieldval)
+gui.fAddRollDet.ddlScpNt.Text(v.DataTable.RollDetDt(v.Args.rowindex).SCRAP_NOTE!fieldval)
+gui.fAddRollDet.txtLbsAdd.Text(v.DataTable.RollDetDt(v.Args.rowindex).LBS_ADDITIVE!fieldval)
+gui.fAddRollDet.txtaddType.Text(v.DataTable.RollDetDt(v.Args.rowindex).ADDITIVE_TYPE!fieldval)
+gui.fAddRollDet.txtBlndPct.Text(v.DataTable.RollDetDt(v.Args.rowindex).BLENDER_SETTING!fieldval)
+gui.fAddRollDet.txtGgeWt.Text(v.DataTable.RollDetDt(v.Args.rowindex).GAUGE_BY_WEIGHT!fieldval)
+gui.fAddRollDet.txtRollWtWC.Text(v.DataTable.RollDetDt(v.Args.rowindex).ROLL_WEIGHT_WO_CORE!fieldval)
+gui.fAddRollDet.txtLbsPerHr.Text(v.DataTable.RollDetDt(v.Args.rowindex).LBS_PER_HOUR!fieldval)
+gui.fAddRollDet.txtFtCntOut.Text(v.DataTable.RollDetDt(v.Args.rowindex).FOOT_COUNT_OUT!fieldval)
+'gui.fAddRollDet.txtAddPct.Text(v.DataTable.RollDetDt(v.Args.rowindex).ADDITIVE_PCT!fieldvalfloat)
+v.global.bUpdate.Set(true)
+gui.fAddRollDet..SetFocus
+f.Intrinsic.Control.CallSub(LostFocus1)
+f.Intrinsic.Control.UnBlockEvents
+f.Intrinsic.Control.ExitSub
+f.Intrinsic.Control.catch
+f.Intrinsic.Control.CallSub(catching,"sub",v.Ambient.CurrentSubroutine,"errorno",v.Ambient.ErrorNumber,"errordesc",v.Ambient.ErrorDescription)
+f.Intrinsic.Control.EndTry
+Program.Sub.GsGcRollDet_RowCellClick.End
+
+Program.Sub.AddBagDet.Start
+v.Local.sSQL.Declare(String)
+v.Local.sFrmCaption.Declare(String)
+v.Local.sTemp.Declare(String)
+v.Local.sPLCheck.Declare(String)
+v.Local.iYesNo.Declare(long)
+v.Local.iCheck.Declare(long)
+v.Local.fTotScrLbs.declare(float)
+v.Local.iRollNo.Declare(long)
+v.Local.fTotLbs.declare(float)
+v.Local.fTotFoot.declare(float)
+v.Local.fTotScrap.declare(float)
+f.Intrinsic.Control.Try
+
+
+f.Intrinsic.string.Build("SELECT RTRIM(PRODUCT_LINE) as PRODUCT_LINE FROM V_JOB_HEADER WHERE JOB = '{0}' and SUFFIX = '{1}'",v.Passed.009990,v.Passed.009991,v.Local.sSQL)
+f.odbc.Connection!conx.executeandreturn(v.local.sSql,v.Local.sPLCheck)
+
+gui.fAddBagsDet.ddlScpNt.ClearItems
+gui.fAddBagsDet.ddlScpNt.AddItem("NA")
+gui.fAddBagsDet.ddlScpNt.additem("Blocking")
+gui.fAddBagsDet.ddlScpNt.additem("Carbons/Unmelts")
+gui.fAddBagsDet.ddlScpNt.additem("Crushed Core")
+gui.fAddBagsDet.ddlScpNt.additem("Die Lines")
+gui.fAddBagsDet.ddlScpNt.additem("Film Wander")
+gui.fAddBagsDet.ddlScpNt.additem("Gauge Band")
+gui.fAddBagsDet.ddlScpNt.additem("Gauge Fluctuation")
+gui.fAddBagsDet.ddlScpNt.additem("Gusset Out")
+gui.fAddBagsDet.ddlScpNt.additem("Jamming")
+gui.fAddBagsDet.ddlScpNt.additem("Lay Flat Issue")
+gui.fAddBagsDet.ddlScpNt.additem("Mechanical Adjustment")
+gui.fAddBagsDet.ddlScpNt.additem("Mechanical Malfunction")
+gui.fAddBagsDet.ddlScpNt.additem("Print Issue")
+gui.fAddBagsDet.ddlScpNt.additem("Roll Change")
+gui.fAddBagsDet.ddlScpNt.additem("Roll Damage")
+gui.fAddBagsDet.ddlScpNt.additem("Splice")
+gui.fAddBagsDet.ddlScpNt.additem("Telescoping")
+gui.fAddBagsDet.ddlScpNt.additem("Tension Issue")
+gui.fAddBagsDet.ddlScpNt.additem("Wrinkles")
+
+
+f.Intrinsic.Control.If(v.Local.sPLCheck.Trim,=,"PB")
+
+	f.Intrinsic.Control.If(v.Passed.000008,=,"N","AND",v.Passed.000003,=,"N")
+		f.Intrinsic.Control.CallSub(Unload_all)
+	f.Intrinsic.Control.EndIf
+	f.Intrinsic.Control.If(v.Passed.000003,=,"Y")
+		'if closing job. check if they want to record any additional data.
+		Function.Intrinsic.UI.MsgBox("Do you have to save any job related data before closing the Job?", "Bag Data Check", 4, v.Local.iYesNo)
+		f.Intrinsic.Control.If(v.Local.iYesNo,=,7)
+			f.Intrinsic.Control.CallSub(Unload_all)
+		f.Intrinsic.Control.EndIf		
+	f.Intrinsic.Control.EndIf
+	f.Intrinsic.string.Build("select BAGS_PER_SET,BAGS_PER_GAYLORD FROM GCG_4646_ADDLRTRINF1 WHERE ROUTER = (SELECT ROUTER FROM V_JOB_HEADER WHERE JOB = '{0}' and SUFFIX = '{1}')",v.Passed.009990,v.Passed.009991,v.Local.sSQL)
+	f.Data.DataTable.CreateFromSQL("CalcHold","conx",v.Local.sSQL)
+	f.Intrinsic.Control.If(v.DataTable.CalcHold.RowCount,=,0)
+		f.intrinsic.UI.Msgbox("Router associated with the job does not have the required additional details saved in the database. Contact supervisor to get those details added in before processing the Job.")
+		f.Intrinsic.Control.CallSub(fAddBagsDet_UnLoad)
+	f.Intrinsic.Control.EndIf
+	
+	f.Intrinsic.string.Build("Add Bag Details for JOB {0}-{1} SEQ {2}",v.Passed.009990,v.Passed.009991,v.Passed.009992,v.Local.sFrmCaption)
+	gui.fAddBagsDet..Caption(v.Local.sFrmCaption)
+	f.Intrinsic.string.Build("select Sum(LBS_SCRAP) as TOT_LBS_SCRAP,sum(TOTAL_BAGS) as TOTAL_BAGS, SUM(NO_OF_SETS) AS TOTAL_CASE,SUM(NO_OF_GAYLORDS) AS TOTAL_GAYLORD, AVG(BAGS_PER_HOUR) as AVG_BAG_HR FROM GCG_4646_SHPFLRDATA2 WHERE JOB = '{0}' and SUFFIX = '{1}' and SEQ = '{2}'",v.Passed.009990,v.Passed.009991,v.Passed.009992,v.Local.sSQL)
+	F.Data.DataTable.CreateFromSQL("AggDT","conx",V.Local.sSQL)
+		f.Intrinsic.Control.If(v.DataTable.AggDT.RowCount,<>,0)
+		gui.fAddBagsDet.txtTotScrap.Text(v.DataTable.AggDT(0).TOT_LBS_SCRAP!fieldvalfloat)
+		gui.fAddBagsDet.txtNoGL.Text(v.DataTable.AggDT(0).TOTAL_GAYLORD!fieldvalfloat)
+		gui.fAddBagsDet.txtTotBagsAg.Text(v.DataTable.AggDT(0).TOTAL_BAGS!fieldvalfloat)
+		gui.fAddBagsDet.txtTotCases.Text(v.DataTable.AggDT(0).TOTAL_CASE!fieldvalfloat)
+		gui.fAddBagsDet.txtBagsPerHrAg.Text(v.DataTable.AggDT(0).AVG_BAG_HR!fieldvalfloat)
+		
+		f.Data.DataTable.Close("AggDT")
+	f.Intrinsic.Control.Else
+		f.Data.DataTable.Close("AggDT")
+	f.Intrinsic.Control.EndIf
+	
+	v.Global.dTime.Set(v.Ambient.Now)
+	gui.fAddBagsDet..Show
+	gui.fAddBagsDet..SetFocus	
+
+
+f.Intrinsic.Control.Else
+	f.Intrinsic.Control.CallSub(Unload_all)
+f.Intrinsic.Control.EndIf
+
+f.Intrinsic.Control.catch
+v.Passed.777777.Set(1)
+f.Intrinsic.Control.CallSub(catching,"sub",v.Ambient.CurrentSubroutine,"errorno",v.Ambient.ErrorNumber,"errordesc",v.Ambient.ErrorDescription)
+f.Intrinsic.Control.EndTry
+Program.Sub.AddBagDet.End
+
+Program.Sub.cmdClrFlds1_Click.Start
+gui.fAddBagsDet.txtNoDowScr.Text("")
+gui.fAddBagsDet.txtNoTrayScr.Text("")
+gui.fAddBagsDet.txtNoTubeScr.Text("")
+gui.fAddBagsDet.txtNoLinerScr.Text("")
+gui.fAddBagsDet.txtLbsScrap.Text("")
+gui.fAddBagsDet.txtScrapNote.Text("")
+gui.fAddBagsDet.txtNoSets.Text("")
+gui.fAddBagsDet.txtNoSets.Text("")
+gui.fAddBagsDet.txtNoGL.Text("")
+gui.fAddBagsDet.txtRollNoFlm.Text("")
+gui.fAddBagsDet.txtTotBags.Text("")
+gui.fAddBagsDet.txtBagsPerHr.Text("")
+gui.fAddBagsDet.txtTotCases.Text("")
+Program.Sub.cmdClrFlds1_Click.End
+
+Program.Sub.cmdSaveBagDet_Click.Start
+v.Local.sSql.Declare(String)
+V.Local.icheck.Declare(long)
+V.Local.iRollNo.Declare(long)
+f.Intrinsic.Control.Try
+gui.fAddBagsDet..Enabled(false)
+f.Intrinsic.control.CallSub(LostFocus2)
+f.Intrinsic.Control.If(v.Screen.fAddBagsDet!txtNoDowScr.text.trim,=,"")
+	f.intrinsic.UI.Msgbox("Roll Weight field is empty. Ensure that the field isn't empty before saving the  output Details.")
+	gui.fAddBagsDet..Enabled(True)
+	f.Intrinsic.Control.ExitSub
+F.Intrinsic.Control.EndIf
+f.Intrinsic.Control.If(v.Screen.fAddBagsDet!txtNoTrayScr.text.trim,=,"")
+	f.intrinsic.UI.Msgbox("Measured Layflat field is empty. Ensure that the field isn't empty before saving the output Details.")
+	gui.fAddBagsDet..Enabled(True)
+	f.Intrinsic.Control.ExitSub
+F.Intrinsic.Control.EndIf
+f.Intrinsic.Control.If(v.Screen.fAddBagsDet!txtNoTubeScr.text.trim,=,"")
+	f.intrinsic.UI.Msgbox("10 Ft Sample gram weight field is empty. Ensure that the field isn't empty before saving the output details.")
+	gui.fAddBagsDet..Enabled(True)
+	f.Intrinsic.Control.ExitSub
+F.Intrinsic.Control.EndIf
+f.Intrinsic.Control.If(v.Screen.fAddBagsDet!txtNoLinerScr.text.trim,=,"")
+	f.intrinsic.UI.Msgbox("Nip Speed field is empty. Ensure that the field isn't empty before saving the output details.")
+	gui.fAddBagsDet..Enabled(True)
+	f.Intrinsic.Control.ExitSub
+F.Intrinsic.Control.EndIf
+f.Intrinsic.Control.If(v.Screen.fAddBagsDet!txtLbsScrap.text.trim,<>,"")
+	f.Intrinsic.Control.If(v.Screen.fAddBagsDet!ddlScpNt.text.trim,=,"")
+		f.intrinsic.UI.Msgbox("Scrap note field is empty. Ensure that the field isn't empty before saving the output details.")
+		gui.fAddBagsDet..Enabled(True)
+		f.Intrinsic.Control.ExitSub
+	F.Intrinsic.Control.EndIf
+F.Intrinsic.Control.EndIf
+
+
+f.Intrinsic.Control.If(v.Screen.fAddBagsDet!txtNoSets.text.trim,=,"")
+	f.intrinsic.UI.Msgbox("Lbs Additive field is empty. Ensure that the field isn't empty before saving the output details.")
+	gui.fAddBagsDet..Enabled(True)
+	f.Intrinsic.Control.ExitSub
+F.Intrinsic.Control.EndIf
+f.Intrinsic.Control.If(v.Screen.fAddBagsDet!txtRollNoFlm.text.trim,=,"")
+	f.intrinsic.UI.Msgbox("Additive type field is empty. Ensure that the field isn't empty before saving the output details.")
+	gui.fAddBagsDet..Enabled(True)
+	f.Intrinsic.Control.ExitSub
+F.Intrinsic.Control.EndIf
+f.Intrinsic.control.CallSub(Txt_change_1)
+f.Intrinsic.control.CallSub(LostFocus2)
+f.Intrinsic.string.Build("SELECT COUNT(JOB) FROM GCG_4646_SHPFLRDATA2 WHERE JOB = '{0}' and SUFFIX = '{1}' and SEQ = '{2}'",v.Passed.009990,v.Passed.009991,v.Passed.009992,v.Local.sSQL)
+f.odbc.Connection!conx.executeandreturn(v.local.sSql,v.Local.iCheck)
+F.Intrinsic.control.If(v.Local.iCheck,=,0)
+	v.Local.iRollNo.Set(1)
+f.Intrinsic.Control.Else
+	f.Intrinsic.Math.Add(v.Local.iCheck,1,v.Local.iRollNo)	
+f.Intrinsic.Control.EndIf
+f.Intrinsic.String.build("INSERT INTO GCG_4646_SHPFLRDATA2  (JOB,SUFFIX,SEQ,NO_OF_DOWELS,NO_OF_TRAYS,NO_OF_TUBES,NO_OF_LINERS,LBS_SCRAP,SCRAP_REASON,NO_OF_SETS,ROLL_NO_FILM,TOTAL_BAGS,BAGS_PER_HOUR,EMPLOYEE,EMP_NAME,ENTRY_NO,NO_OF_GAYLORDS) VALUES  ('{0}','{1}','{2}','{3}','{4}','{5}','{6}','{7}','{8}','{9}','{10}','{11}','{12}','{13}','{14}','{15}','{16}')",v.Passed.009990,v.Passed.009991,v.Passed.009992,v.Screen.fAddBagsDet!txtNoDowScr.text.float,v.Screen.fAddBagsDet!txtNoTrayScr.text.float,v.Screen.fAddBagsDet!txtNoTubeScr.text.float,v.Screen.fAddBagsDet!txtNoLinerScr.text.float,v.Screen.fAddBagsDet!txtLbsScrap.text.float,v.Screen.fAddBagsDet!ddlScpNt.text,v.Screen.fAddBagsDet!txtNoSets.text.float,v.Screen.fAddBagsDet!txtRollNoFlm.text,v.Screen.fAddBagsDet!txtTotBags.text,v.Screen.fAddBagsDet!txtBagsPerHr.text,v.passed.009993,v.Passed.009994,v.Local.iRollNo,v.Screen.fAddBagsDet!txtNoGL.text,V.Local.sSql)
+F.ODBC.Connection!conx.EXECUTE(V.Local.sSql)
+gui.fAddBagsDet..Enabled(true)
+f.Intrinsic.Control.CallSub(Unload_all)
+f.Intrinsic.Control.catch
+v.Passed.777777.Set(1)
+f.Intrinsic.Control.CallSub(catching,"sub",v.Ambient.CurrentSubroutine,"errorno",v.Ambient.ErrorNumber,"errordesc",v.Ambient.ErrorDescription)
+f.Intrinsic.Control.EndTry
+
+Program.Sub.cmdSaveBagDet_Click.End
+
+Program.Sub.fAddBagsDet_UnLoad.Start
+v.Passed.777777.Set(1)
+f.Intrinsic.Control.CallSub(Unload_all)
+Program.Sub.fAddBagsDet_UnLoad.End
+
+Program.Sub.LostFocus2.Start
+v.Local.sTemp.Declare(String)
+f.Intrinsic.Control.try
+f.Intrinsic.Control.BlockEvents
+'Format numeric fields on lost focus
+v.Local.sTemp.Set(v.Screen.fAddBagsDet!txtNoDowScr.text)
+F.Intrinsic.String.Format(v.Local.sTemp, "#########0", v.Local.sTemp)
+gui.fAddBagsDet.txtNoDowScr.Text(v.Local.sTemp)
+
+v.Local.sTemp.Set(v.Screen.fAddBagsDet!txtNoTrayScr.text)
+F.Intrinsic.String.Format(v.Local.sTemp, "#########0", v.Local.sTemp)
+gui.fAddBagsDet.txtNoTrayScr.Text(v.Local.sTemp)
+
+v.Local.sTemp.Set(v.Screen.fAddBagsDet!txtNoTubeScr.text)
+F.Intrinsic.String.Format(v.Local.sTemp, "#########0", v.Local.sTemp)
+gui.fAddBagsDet.txtNoTubeScr.Text(v.Local.sTemp)
+
+v.Local.sTemp.Set(v.Screen.fAddBagsDet!txtNoLinerScr.text)
+F.Intrinsic.String.Format(v.Local.sTemp, "#########0", v.Local.sTemp)
+gui.fAddBagsDet.txtNoLinerScr.Text(v.Local.sTemp)
+
+v.Local.sTemp.Set(v.Screen.fAddBagsDet!txtLbsScrap.text)
+F.Intrinsic.String.Format(v.Local.sTemp, "#########0.00", v.Local.sTemp)
+gui.fAddBagsDet.txtLbsScrap.Text(v.Local.sTemp)
+
+v.Local.sTemp.Set(v.Screen.fAddBagsDet!txtTotCases.text)
+F.Intrinsic.String.Format(v.Local.sTemp, "#########0", v.Local.sTemp)
+gui.fAddBagsDet.txtTotCases.Text(v.Local.sTemp)
+
+v.Local.sTemp.Set(v.Screen.fAddBagsDet!txtNoSets.text)
+F.Intrinsic.String.Format(v.Local.sTemp, "#########0", v.Local.sTemp)
+gui.fAddBagsDet.txtNoSets.Text(v.Local.sTemp)
+
+v.Local.sTemp.Set(v.Screen.fAddBagsDet!txtNoGL.text)
+F.Intrinsic.String.Format(v.Local.sTemp, "#########0", v.Local.sTemp)
+gui.fAddBagsDet.txtNoGL.Text(v.Local.sTemp)
+
+v.Local.sTemp.Set(v.Screen.fAddBagsDet!txtRollNoFlm.text)
+F.Intrinsic.String.Format(v.Local.sTemp, "#########0", v.Local.sTemp)
+gui.fAddBagsDet.txtRollNoFlm.Text(v.Local.sTemp)
+f.Intrinsic.Control.UnBlockEvents
+
+f.Intrinsic.Control.catch
+v.Passed.777777.Set(1)
+f.Intrinsic.Control.CallSub(catching,"sub",v.Ambient.CurrentSubroutine,"errorno",v.Ambient.ErrorNumber,"errordesc",v.Ambient.ErrorDescription)
+f.Intrinsic.Control.EndTry
+
+
+Program.Sub.LostFocus2.End
+
+Program.Sub.Txt_change_1.Start
+v.Local.sSql.Declare(String)
+v.Local.sTemp.Declare(String)
+v.Local.dDate.Declare(date)
+v.Local.dTime.Declare(date)
+v.Local.dStDateTime.Declare(Date)
+v.Local.iInterval.Declare(long)
+v.Local.fHours.Declare(float)
+
+v.Local.iTotBags.Declare(long)
+v.Local.iTotGL.Declare(long)
+v.Local.iBagsPerSet.Declare(long)
+v.Local.iBagsPerGL.Declare(long)
+v.Local.fBagsPerHour.Declare(float)
+v.Local.iTotCase.Declare(long)
+f.Intrinsic.Control.Try
+f.Intrinsic.Control.BlockEvents
+f.Intrinsic.Control.If(v.Screen.fAddBagsDet!txtNoSets.text,=,"")
+	f.Intrinsic.Control.UnBlockEvents
+	f.Intrinsic.Control.ExitSub
+f.Intrinsic.Control.EndIf
+
+'we need to do some calculations here based on data we fetch from the addl router info stuff
+f.Intrinsic.string.Build("select BAGS_PER_SET FROM GCG_4646_ADDLRTRINF1 WHERE ROUTER = (SELECT ROUTER FROM V_JOB_HEADER WHERE JOB = '{0}' and SUFFIX = '{1}')",v.Passed.009990,v.Passed.009991,v.Local.sSQL)
+f.ODBC.Connection!conx.ExecuteAndReturn(v.Local.sSQL,v.Local.iBagsPerSet)
+
+f.intrinsic.Math.Mult(v.Screen.fAddBagsDet!txtNoSets.text,v.Local.iBagsPerSet,v.Local.iTotBags)
+gui.fAddBagsDet.txtTotBags.Text(v.Local.iTotBags)
+
+f.Intrinsic.string.Build("select BAGS_PER_GAYLORD FROM GCG_4646_ADDLRTRINF1 WHERE ROUTER = (SELECT ROUTER FROM V_JOB_HEADER WHERE JOB = '{0}' and SUFFIX = '{1}')",v.Passed.009990,v.Passed.009991,v.Local.sSQL)
+f.ODBC.Connection!conx.ExecuteAndReturn(v.Local.sSQL,v.Local.iBagsPerGL)
+
+f.intrinsic.Math.div(v.Local.iTotBags,v.Local.iBagsPerGL,v.Local.iTotGL)
+gui.fAddBagsDet.txtNoGL.Text(v.Local.iTotGL)
+
+
+f.Intrinsic.string.Build("select START_DATE,START_TIME FROM V_JOBS_IN_PROCESS_G  WHERE JOB = '{0}' and SUFFIX = '{1}' and SEQ = '{2}' and EMPLOYEE = '{3}'",v.Passed.009990,v.Passed.009991,v.Passed.009992,v.passed.009993,v.Local.sSQL)
+f.ODBC.Connection!conx.OpenRecordsetRO("rst",v.Local.sSQL)
+
+Function.Intrinsic.Date.TimeComp(v.ODBC.conx!rst.FieldVal!START_TIME,v.local.dTime)
+Function.Intrinsic.Date.DateComp(v.ODBC.conx!rst.FieldVal!START_DATE,v.Local.dDate)
+
+
+f.Intrinsic.date.CombineDateTime(v.Local.dDate,v.local.dTime,v.Local.dStDateTime)
+f.Intrinsic.Date.DateDiff("n",v.Local.dStDateTime,v.Ambient.Now,v.Local.iInterval)
+F.ODBC.Connection!conx.CloseRecordsets
+f.Intrinsic.Math.Div(v.Local.iInterval,60,v.Local.fHours)
+'I dont have time for this if you dont have time
+f.Intrinsic.Control.If(v.Local.fHours,=,0)
+	f.Intrinsic.UI.Msgbox("The job cannot be processed as it has 0 Hours logged against it.")
+	f.Intrinsic.Control.CallSub(fAddBagsDet_UnLoad)
+f.Intrinsic.Control.EndIf
+f.Intrinsic.Math.div(v.Local.iTotBags,v.Local.fHours,v.Local.fBagsPerHour)
+gui.fAddBagsDet.txtBagsPerHr.Text(v.Local.fBagsPerHour)
+
+
+v.Local.sTemp.Set(v.Screen.fAddBagsDet!txtTotBags.text)
+F.Intrinsic.String.Format(v.Local.sTemp, "#########0", v.Local.sTemp)
+gui.fAddBagsDet.txtTotBags.Text(v.Local.sTemp)
+
+
+
+v.Local.sTemp.Set(v.Screen.fAddBagsDet!txtBagsPerHr.text)
+F.Intrinsic.String.Format(v.Local.sTemp, "#########0.0", v.Local.sTemp)
+gui.fAddBagsDet.txtBagsPerHr.Text(v.Local.sTemp)
+
+v.Local.sTemp.Set(v.Screen.fAddBagsDet!txtTotCases.text)
+F.Intrinsic.String.Format(v.Local.sTemp, "#########0", v.Local.sTemp)
+gui.fAddBagsDet.txtTotCases.Text(v.Local.sTemp)
+
+f.Intrinsic.Control.UnBlockEvents
+f.Intrinsic.Control.catch
+v.Passed.777777.Set(1)
+f.Intrinsic.Control.CallSub(catching,"sub",v.Ambient.CurrentSubroutine,"errorno",v.Ambient.ErrorNumber,"errordesc",v.Ambient.ErrorDescription)
+f.Intrinsic.Control.EndTry
+Program.Sub.Txt_change_1.End
+
+Program.Sub.catching.Start
+v.Local.sError.declare(string)
+Function.Intrinsic.String.Concat(v.Ambient.Now,": Project: GCG_4646_ShpFlrData.g2u",V.Ambient.Newline,V.Ambient.Newline,"Subroutine: ",v.Args.sub,V.Ambient.NewLine,"Error Occurred ",V.Args.errorno," with description ",V.args.errordesc,V.Local.sError)
+f.Intrinsic.UI.Msgbox(v.Local.sError)
+f.Intrinsic.Control.CallSub(Unload_all)
+Program.Sub.catching.End
